@@ -33,6 +33,17 @@ def model(input_shape):
     model.add(Activation('relu'))
     model.add(MaxPooling1D(pool_length=pool_length))
     model.add(Dropout(0.2))
+
+    model.add(LSTM(lstm_output_size,
+                    # input_shape=input_shape,
+                    activation='sigmoid',
+                    inner_activation='hard_sigmoid',
+                    return_sequences=True
+                    ))
+
+    model.add(Dropout(0.2))
+
+
     #
     #
     # # #
@@ -71,21 +82,13 @@ def model(input_shape):
     # # model.add(Dropout(0.2))
     #
     # model.add(Dropout(0.2))
-
-
     # model.add(Flatten())
+    # model.add(Dense(10))
+    # model.add(Dropout(0.2))
+    model.add(Flatten())
     # model.add(LSTM(lstm_output_size))
 
-    model.add(LSTM(lstm_output_size,
-                    # input_shape=(X.shape[1],X.shape[2]),
-                    activation='sigmoid',
-                    inner_activation='hard_sigmoid',
-                    # return_sequences=True
-                    ))
 
-    model.add(Dropout(0.2))
-    model.add(Dense(10))
-    model.add(Dropout(0.2))
     return model
 
 # model.add(LSTM(lstm_output_size,
