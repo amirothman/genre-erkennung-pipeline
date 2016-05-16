@@ -34,22 +34,21 @@ def to_mono(filepath,format_ending):
     mono_commando = "ffmpeg -i {0}.{1} -ac 1 {0}-mono.{1}"
     ffmpeg_process(filepath,format_ending,mono_commando)
 
-def batch_thirty_seconds(file_format,folder_path):
+def batch_thirty_seconds(folder_path,file_format):
     print("batch thirty_seconds")
     for song_path in iterate_audio(file_format,folder_path):
-        print(song_path)
         thirty_seconds(song_path,file_format)
 
-def batch_mono(file_format,folder_path):
+def batch_mono(folder_path,file_format):
     print("batch mono")
     for song_path in iterate_audio(file_format,folder_path):
-        print(song_path)
         to_mono(song_path,file_format)
 
 if __name__=="__main__":
     # ffmpeg_process("02-Dreaming.mp3")
     file_format = "mp3"
-    folder_path = "ngetest"
+    folder_paths = ["dataset/test/rock","dataset/train/rock"]
     print("proses")
-    batch_thirty_seconds(file_format,folder_path)
-    batch_mono(file_format,folder_path)
+    for folder_path in folder_paths:
+        batch_thirty_seconds(folder_path,file_format)
+        batch_mono(folder_path,file_format)
