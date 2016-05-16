@@ -53,25 +53,25 @@ final_model.compile(loss='categorical_crossentropy',
               metrics=['accuracy']
               )
 
-json_string = final_model.to_json()
+# json_string = final_model.to_json()
 # with open("model_architecture/merged_model_architecture.json","w") as f:
 #     f.write(json.dumps(json_string, sort_keys=True,indent=4, separators=(',', ': ')))
 
-# print("Fitting")
-#
-# final_model.load_weights("model_weights/merged_model_weights.hdf5")
-#
-# for i in range(30):
-#     print("epoch",i)
-#     final_model.fit([X_2,X_3], y,
-#                     batch_size=batch_size,
-#                     nb_epoch=1,
-#                     validation_data=([X_test_2,X_test_3], y_test),
-#                     shuffle="batch"
-#                     )
-#
-#     final_model.save_weights("model_weights/merged_model_weights.hdf5",overwrite=True)
-#
+print("Fitting")
+
+final_model.load_weights("model_weights/merged_model_weights.hdf5")
+
+for i in range(10):
+    print("epoch",i)
+    final_model.fit([X_2,X_3], y,
+                    batch_size=batch_size,
+                    nb_epoch=1,
+                    validation_data=([X_test_2,X_test_3], y_test),
+                    shuffle="batch"
+                    )
+
+    final_model.save_weights("model_weights/merged_model_weights.hdf5",overwrite=True)
+
 
 
 # # with open("experimental_results.json","w") as f:

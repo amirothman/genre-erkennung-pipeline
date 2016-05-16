@@ -119,11 +119,11 @@ def model(input_shape):
 # model.add(Dropout(0.2))
 
 if __name__=="__main__":
-    X = pickle.load(open("3_genres_spectral_contrast_peaks_training_vector.pickle","rb"))
-    y = pickle.load(open("3_genres_spectral_contrast_peaks_label.pickle","rb"))
+    X = pickle.load(open("pickled_vectors/spectral-contrast_peaks_training_vector.pickle","rb"))
+    y = pickle.load(open("pickled_vectors/spectral-contrast_peaks_label.pickle","rb"))
 
-    X_test = pickle.load(open("3_genres_spectral_contrast_peaks_evaluation_training_vector.pickle","rb"))
-    y_test = pickle.load(open("3_genres_spectral_contrast_peaks_evaluation_label.pickle","rb"))
+    X_test = pickle.load(open("pickled_vectors/spectral-contrast_peaks_evaluation_training_vector.pickle","rb"))
+    y_test = pickle.load(open("pickled_vectors/spectral-contrast_peaks_evaluation_label.pickle","rb"))
 
     batch_size = 20
     nb_epoch = 20
