@@ -22,25 +22,27 @@ def mfcc_model(input_shape):
     # create model
     model = Sequential()
 
-    model.add(Convolution1D(
-                            input_shape=input_shape,
-                            nb_filter=nb_filter,
-                            filter_length=filter_length,
-                            border_mode='valid',
-                            subsample_length=1))
-    model.add(Activation('relu'))
-    model.add(MaxPooling1D(pool_length=pool_length))
-    model.add(Dropout(0.4))
-    # #
+    # model.add(Convolution1D(
+    #                         input_shape=input_shape,
+    #                         nb_filter=nb_filter,
+    #                         filter_length=filter_length,
+    #                         border_mode='valid',
+    #                         subsample_length=1))
+    # model.add(Activation('relu'))
+    # model.add(MaxPooling1D(pool_length=pool_length))
+    # model.add(Dropout(0.4))
     # # #
-    model.add(Convolution1D(
-                            nb_filter=int(nb_filter/5),
-                            filter_length=int(filter_length),
-                            border_mode='valid',
-                            subsample_length=1))
-    model.add(Activation('relu'))
-    model.add(MaxPooling1D(pool_length=pool_length))
-    model.add(Dropout(0.4))
+    # # # #
+    # model.add(Convolution1D(
+    #                         nb_filter=int(nb_filter/5),
+    #                         filter_length=int(filter_length),
+    #                         border_mode='valid',
+    #                         subsample_length=1))
+    # model.add(Activation('relu'))
+    # model.add(MaxPooling1D(pool_length=pool_length))
+    # model.add(Dropout(0.4))
+
+
     # model.add(Flatten())
     # # #
     # # #
@@ -55,7 +57,7 @@ def mfcc_model(input_shape):
     # model.add(Dropout(0.2))
     #
     model.add(LSTM(lstm_output_size,
-                    # input_shape=input_shape,
+                    input_shape=input_shape,
                     activation='sigmoid',
                     inner_activation='hard_sigmoid'))
     #
@@ -65,8 +67,8 @@ def mfcc_model(input_shape):
 
     # model.add(Flatten())
     # model.add(LSTM(lstm_output_size))
-    model.add(Dropout(0.4))
-    model.add(Dense(10))
+    # model.add(Dropout(0.4))
+    # model.add(Dense(10))
     model.add(Dropout(0.2))
     #
     # model.add(Convolution1D(

@@ -48,7 +48,7 @@ merged = Merge([model_2,model_3],mode="concat")
 
 final_model = Sequential()
 final_model.add(merged)
-final_model.add(Dense(1000))
+# final_model.add(Dense(1000))
 final_model.add(Dense(10, activation='softmax'))
 final_model.compile(loss='categorical_crossentropy',
               optimizer='adam',
@@ -60,9 +60,9 @@ final_model.compile(loss='categorical_crossentropy',
 # plot(final_model,to_file="merged_model.png")
 
 
-
+#
 json_string = final_model.to_json()
-with open("model_architecture/embeddings_10_sec_split_gztan_merged_model_architecture.json","w") as f:
+with open("model_architecture/10_sec_split_gztan_merged_model_lstsm_only_architecture.json","w") as f:
     f.write(json.dumps(json_string, sort_keys=True,indent=4, separators=(',', ': ')))
 
 print("Fitting")
@@ -72,15 +72,14 @@ print("Fitting")
 # # for i in range(10):
 # #     print("epoch",i)
 
-vector_length = int(len(X_2)/2)
-history = final_model.fit([X_2[:vector_length],X_3[:vector_length]], y[:vector_length],
+history = final_model.fit([X_2,X_3], y,
                             batch_size=batch_size,
                             nb_epoch=nb_epoch,
                             validation_data=([X_test_2,X_test_3], y_test),
                             shuffle="batch"
                             )
 
-final_model.save_weights("model_weights/embeddings_10_sec_split_gztan_merged_model_weights.hdf5",overwrite=True)
+final_model.save_weights("model_weights/10_sec_split_gztan_merged_model_lstm_only_weights.hdf5",overwrite=True)
 
 with open("experimental_results.json","w") as f:
     f.write(json.dumps(history.history, sort_keys=True,indent=4, separators=(',', ': ')))
