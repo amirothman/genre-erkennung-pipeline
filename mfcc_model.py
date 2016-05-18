@@ -55,7 +55,7 @@ def mfcc_model(input_shape):
     # model.add(Dropout(0.2))
     #
     model.add(LSTM(lstm_output_size,
-                    # input_shape=(X.shape[1],X.shape[2]),
+                    # input_shape=input_shape,
                     activation='sigmoid',
                     inner_activation='hard_sigmoid'))
     #
@@ -89,7 +89,6 @@ def mfcc_model(input_shape):
     # model.add(Dense(200))
     # model.add(Activation("sigmoid"))
     # model.add(Dropout(0.2))
-
 
     return model
 

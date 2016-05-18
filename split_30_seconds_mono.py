@@ -46,9 +46,14 @@ def batch_mono(folder_path,file_format):
 
 if __name__=="__main__":
     # ffmpeg_process("02-Dreaming.mp3")
-    file_format = "mp3"
-    folder_paths = ["dataset/test/rock","dataset/train/rock"]
-    print("proses")
-    for folder_path in folder_paths:
-        batch_thirty_seconds(folder_path,file_format)
-        batch_mono(folder_path,file_format)
+    # file_format = "mp3"
+    # folder_paths = ["dataset/test/rock","dataset/train/rock"]
+    # print("proses")
+    # for folder_path in folder_paths:
+    #     batch_thirty_seconds(folder_path,file_format)
+    #     batch_mono(folder_path,file_format)
+
+    file_format = "au"
+    folder_path = "dataset/gztan_split_10sec"
+
+    batch_thirty_seconds(folder_path,file_format)

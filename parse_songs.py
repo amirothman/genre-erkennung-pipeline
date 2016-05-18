@@ -11,13 +11,14 @@ from sklearn.datasets import dump_svmlight_file
 # this is probably not the best way to encode
 # a one-hot label from the song path
 
-def encode_label(genres,song_path):
+def encode_label(genres,song_path,verbose=True):
     label = None
     for idx, genre in enumerate(genres):
         if re.search(genre,song_path):
             label = idx
             # print(genre)
-            print(song_path)
+            if verbose:
+                print(song_path)
             # print(label)
             break
     return label
@@ -32,8 +33,9 @@ def create_data_set(data_set_path,keyword=None,lower_limit=None,upper_limit=None
 
     for root, dirs, files in os.walk(data_set_path, topdown=False):
         genres = [_dir for _dir in dirs]
+        print("heeeee")
         # print(genres)
-    # print("genres",genres)
+    print("genres",genres)
     # print(data_set_path)
     for root, dirs, files in os.walk(data_set_path, topdown=False):
         for name in files:
@@ -50,7 +52,7 @@ def create_data_set(data_set_path,keyword=None,lower_limit=None,upper_limit=None
                     song_features = np.array([song_features[lower_limit:upper_limit]])
                 training_vector.append(song_features)
 
-                labels.append(encode_label(genres,song_path))
+                labels.append(encode_label(genres,song_path,verbose=verbose))
                 # print(encode_label(genres,song_path))
 
     if categorical:
@@ -59,12 +61,12 @@ def create_data_set(data_set_path,keyword=None,lower_limit=None,upper_limit=None
     maxlen = np.max([len(vector) for vector in training_vector])
     return training_vector,labels,maxlen
 
-def build_vectors(keyword="",data_label="",lower_limit=None,upper_limit=None):
+def build_vectors(keyword="",data_label="",lower_limit=None,upper_limit=None,folder_path="dataset"):
     # training
-    training_vector,labels,maxlen_training = create_data_set(data_set_path = "dataset/train",keyword=keyword,lower_limit=lower_limit,upper_limit=upper_limit)
+    training_vector,labels,maxlen_training = create_data_set(data_set_path = "{0}/train".format(folder_path),keyword=keyword,lower_limit=lower_limit,upper_limit=upper_limit)
 
     # validation
-    evaluation_training_vector,evaluation_labels,maxlen_evaluation = create_data_set(data_set_path = "dataset/test",keyword=keyword,lower_limit=lower_limit,upper_limit=upper_limit)
+    evaluation_training_vector,evaluation_labels,maxlen_evaluation = create_data_set(data_set_path = "{0}/test".format(folder_path),keyword=keyword,lower_limit=lower_limit,upper_limit=upper_limit)
 
     # # X_training
     training_vector = sequence.pad_sequences(training_vector, maxlen=np.max([maxlen_training,maxlen_evaluation]),dtype='float32')
@@ -83,23 +85,7 @@ def build_vectors(keyword="",data_label="",lower_limit=None,upper_limit=None):
     pickle.dump(evaluation_labels,open("pickled_vectors/{1}{0}_evaluation_label.pickle".format(keyword,data_label),"wb"))
 
 if __name__=="__main__":
-
-    keyword = "spectral-contrast_peaks"
-
-    training_vector,labels,maxlen_training = create_data_set(data_set_path = "dataset/train",keyword=keyword,lower_limit=1)
-    evaluation_training_vector,evaluation_labels,maxlen_evaluation = create_data_set(data_set_path = "dataset/test",keyword=keyword,lower_limit=1)
-
-    with(open("maxlen","w")) as f:
-        f.write(":".join([keyword,str(np.max([maxlen_evaluation,maxlen_training]))]))
-
-    keyword = "mfcc_coefficients"
-
-    training_vector,labels,maxlen_training = create_data_set(data_set_path = "dataset/train",keyword=keyword,lower_limit=1)
-    evaluation_training_vector,evaluation_labels,maxlen_evaluation = create_data_set(data_set_path = "dataset/test",keyword=keyword,lower_limit=1)
-
-    with(open("maxlen","a")) as f:
-        f.write(":".join([keyword,str(np.max([maxlen_evaluation,maxlen_training]))]))
-
+    pass
     # build_vectors(keyword="spectral-contrast_peaks",lower_limit=1)
     # build_vectors(keyword="mfcc_coefficients",lower_limit=1)
     # build_vectors(keyword="tempotracker_tempo",upper_limit=-1)
