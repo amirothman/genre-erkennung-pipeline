@@ -26,10 +26,11 @@ model.compile(loss='categorical_crossentropy',
               metrics=['accuracy']
               )
 # Parse song
-song_name_without_ending = "dataset/query/britney_spears_oops/britney_spears_oops"
+song_name_without_ending = "dataset/query/eminem_my_name_is/eminem_my_name_is"
 file_format = "mp3"
-song_folder = "dataset/query/britney_spears_oops"
+song_folder = "dataset/query/eminem_my_name_is"
 
+#
 process(song_name_without_ending,song_folder,file_format)
 extract(song_folder)
 
@@ -76,4 +77,5 @@ X_3 = sequence.pad_sequences(X_3, maxlen=2588,dtype='float32')
 # print(len(X_3))
 
 predictions = model.predict_classes([X_2,X_3])
-print(predictions)
+labels = ["hiphop","pop","rock"]
+[print(labels[p]) for p in predictions]

@@ -100,11 +100,11 @@ if __name__=="__main__":
     #
     batch_size = 20
     nb_epoch = 20
-    X = pickle.load(open("3_genres_mfcc_coefficients_training_vector.pickle","rb"))
-    y = pickle.load(open("3_genres_mfcc_coefficients_labels.pickle","rb"))
+    X = pickle.load(open("pickled_vectors/3_genres_mfcc_coefficients_training_vector.pickle","rb"))
+    y = pickle.load(open("pickled_vectors/3_genres_mfcc_coefficients_labels.pickle","rb"))
 
-    X_test = pickle.load(open("3_genres_mfcc_coefficients_evaluation_training_vector.pickle","rb"))
-    y_test = pickle.load(open("3_genres_mfcc_coefficients_evaluation_labels.pickle","rb"))
+    X_test = pickle.load(open("pickled_vectors/3_genres_mfcc_coefficients_evaluation_training_vector.pickle","rb"))
+    y_test = pickle.load(open("pickled_vectors/3_genres_mfcc_coefficients_evaluation_labels.pickle","rb"))
 
     model = mfcc_model((X.shape[1],X.shape[2]))
     model.add(Dense(3))
