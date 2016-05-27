@@ -3,4 +3,4 @@ raw/*
 ngetest/*
 pickled_vectors/*
 model_weights/*
-*~
+*.*~
