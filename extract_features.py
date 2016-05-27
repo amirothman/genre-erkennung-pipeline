@@ -25,9 +25,12 @@ def extract_features_single(path="."):
 
 if __name__=="__main__":
     # extract_features("dataset/gztan_split_10sec")
-    for audio_path in iterate_audio(format_ending="au",path="dataset/gztan_split_10sec"):
-        extract_features_single(audio_path)
+    #for audio_path in iterate_audio(format_ending="au",path="dataset/gztan_split_10sec"):
+    #    extract_features_single(audio_path)
     # extract_features("dataset/train/hiphop")
     # extract_features("dataset/train/rock")
     # extract_features("dataset/train/pop")
+
     # extract_features("dataset/train")
+
+    extract_features("dataset/my_data_set")

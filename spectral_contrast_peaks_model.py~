@@ -127,7 +127,7 @@ if __name__=="__main__":
     y_test = pickle.load(open("pickled_vectors/spectral-contrast_peaks_evaluation_label.pickle","rb"))
 
     batch_size = 20
-    nb_epoch = 50
+    nb_epoch = 20
     model = model((X.shape[1],X.shape[2]))
     model.add(Dense(2))
     model.add(Activation('softmax'))

@@ -1,0 +1,115 @@
+dataset
+└── my_data_set
+    ├── test
+    │   ├── genre1
+    │   │   ├── 010._Ольга_Василюк_-_Нет_Тебя-000.mp3
+    │   │   ├── 010._Ольга_Василюк_-_Нет_Тебя-001.mp3
+    │   │   ├── 010._Ольга_Василюк_-_Нет_Тебя-002.mp3
+    │   │   ├── 010._Ольга_Василюк_-_Нет_Тебя-003.mp3
+    │   │   ├── 010._Ольга_Василюк_-_Нет_Тебя-004.mp3
+    │   │   ├── 010._Ольга_Василюк_-_Нет_Тебя-005.mp3
+    │   │   ├── 010._Ольга_Василюк_-_Нет_Тебя-006.mp3
+    │   │   ├── 010._Ольга_Василюк_-_Нет_Тебя-007.mp3
+    │   │   ├── 010._Ольга_Василюк_-_Нет_Тебя-008.mp3
+    │   │   ├── 017._Eros_Ramazzotti_-_Perfetto-000.mp3
+    │   │   ├── 017._Eros_Ramazzotti_-_Perfetto-001.mp3
+    │   │   ├── 017._Eros_Ramazzotti_-_Perfetto-002.mp3
+    │   │   ├── 017._Eros_Ramazzotti_-_Perfetto-003.mp3
+    │   │   ├── 017._Eros_Ramazzotti_-_Perfetto-004.mp3
+    │   │   ├── 017._Eros_Ramazzotti_-_Perfetto-005.mp3
+    │   │   ├── 017._Eros_Ramazzotti_-_Perfetto-006.mp3
+    │   │   ├── 017._Eros_Ramazzotti_-_Perfetto-007.mp3
+    │   │   ├── 018._T.I._Feat._Pharrell_-_Oh_Yeah-000.mp3
+    │   │   ├── 018._T.I._Feat._Pharrell_-_Oh_Yeah-001.mp3
+    │   │   ├── 018._T.I._Feat._Pharrell_-_Oh_Yeah-002.mp3
+    │   │   ├── 018._T.I._Feat._Pharrell_-_Oh_Yeah-003.mp3
+    │   │   ├── 018._T.I._Feat._Pharrell_-_Oh_Yeah-004.mp3
+    │   │   ├── 018._T.I._Feat._Pharrell_-_Oh_Yeah-005.mp3
+    │   │   ├── 018._T.I._Feat._Pharrell_-_Oh_Yeah-006.mp3
+    │   │   └── 018._T.I._Feat._Pharrell_-_Oh_Yeah-007.mp3
+    │   └── genre2
+    │       ├── 011._Maan_-_Perfect_World__Prod._by_Hardwell_-000.mp3
+    │       ├── 011._Maan_-_Perfect_World__Prod._by_Hardwell_-001.mp3
+    │       ├── 011._Maan_-_Perfect_World__Prod._by_Hardwell_-002.mp3
+    │       ├── 011._Maan_-_Perfect_World__Prod._by_Hardwell_-003.mp3
+    │       ├── 011._Maan_-_Perfect_World__Prod._by_Hardwell_-004.mp3
+    │       ├── 011._Maan_-_Perfect_World__Prod._by_Hardwell_-005.mp3
+    │       ├── 011._Maan_-_Perfect_World__Prod._by_Hardwell_-006.mp3
+    │       ├── 015._Глюкоза_-_Согрей-000.mp3
+    │       ├── 015._Глюкоза_-_Согрей-001.mp3
+    │       ├── 015._Глюкоза_-_Согрей-002.mp3
+    │       ├── 015._Глюкоза_-_Согрей-003.mp3
+    │       ├── 015._Глюкоза_-_Согрей-004.mp3
+    │       ├── 015._Глюкоза_-_Согрей-005.mp3
+    │       ├── 015._Глюкоза_-_Согрей-006.mp3
+    │       ├── 015._Глюкоза_-_Согрей-007.mp3
+    │       ├── 015._Глюкоза_-_Согрей-008.mp3
+    │       ├── 016._Вика_Воронина_Feat._Storm_Djs_-_Угги-000.mp3
+    │       ├── 016._Вика_Воронина_Feat._Storm_Djs_-_Угги-001.mp3
+    │       ├── 016._Вика_Воронина_Feat._Storm_Djs_-_Угги-002.mp3
+    │       ├── 016._Вика_Воронина_Feat._Storm_Djs_-_Угги-003.mp3
+    │       ├── 016._Вика_Воронина_Feat._Storm_Djs_-_Угги-004.mp3
+    │       ├── 016._Вика_Воронина_Feat._Storm_Djs_-_Угги-005.mp3
+    │       ├── 016._Вика_Воронина_Feat._Storm_Djs_-_Угги-006.mp3
+    │       └── 016._Вика_Воронина_Feat._Storm_Djs_-_Угги-007.mp3
+    └── train
+        ├── genre1
+        │   ├── 004._Prides_-_Out_Of_The_Blue-000.mp3
+        │   ├── 004._Prides_-_Out_Of_The_Blue-001.mp3
+        │   ├── 004._Prides_-_Out_Of_The_Blue-002.mp3
+        │   ├── 004._Prides_-_Out_Of_The_Blue-003.mp3
+        │   ├── 004._Prides_-_Out_Of_The_Blue-004.mp3
+        │   ├── 004._Prides_-_Out_Of_The_Blue-005.mp3
+        │   ├── 004._Prides_-_Out_Of_The_Blue-006.mp3
+        │   ├── 004._Prides_-_Out_Of_The_Blue-007.mp3
+        │   ├── 008._Марина_Алиева_-_Подари_Любовь-000.mp3
+        │   ├── 008._Марина_Алиева_-_Подари_Любовь-001.mp3
+        │   ├── 008._Марина_Алиева_-_Подари_Любовь-002.mp3
+        │   ├── 008._Марина_Алиева_-_Подари_Любовь-003.mp3
+        │   ├── 008._Марина_Алиева_-_Подари_Любовь-004.mp3
+        │   ├── 008._Марина_Алиева_-_Подари_Любовь-005.mp3
+        │   ├── 008._Марина_Алиева_-_Подари_Любовь-006.mp3
+        │   ├── 008._Марина_Алиева_-_Подари_Любовь-007.mp3
+        │   ├── 008._Марина_Алиева_-_Подари_Любовь-008.mp3
+        │   ├── 009._Чи-Ли_-_Ангел_На_Моём_Плече-000.mp3
+        │   ├── 009._Чи-Ли_-_Ангел_На_Моём_Плече-001.mp3
+        │   ├── 009._Чи-Ли_-_Ангел_На_Моём_Плече-002.mp3
+        │   ├── 009._Чи-Ли_-_Ангел_На_Моём_Плече-003.mp3
+        │   ├── 009._Чи-Ли_-_Ангел_На_Моём_Плече-004.mp3
+        │   ├── 009._Чи-Ли_-_Ангел_На_Моём_Плече-005.mp3
+        │   ├── 009._Чи-Ли_-_Ангел_На_Моём_Плече-006.mp3
+        │   └── 009._Чи-Ли_-_Ангел_На_Моём_Плече-007.mp3
+        └── genre2
+            ├── 001._Paul_Van_Dyk_-_Lights-000.mp3
+            ├── 001._Paul_Van_Dyk_-_Lights-001.mp3
+            ├── 001._Paul_Van_Dyk_-_Lights-002.mp3
+            ├── 001._Paul_Van_Dyk_-_Lights-003.mp3
+            ├── 001._Paul_Van_Dyk_-_Lights-004.mp3
+            ├── 001._Paul_Van_Dyk_-_Lights-005.mp3
+            ├── 001._Paul_Van_Dyk_-_Lights-006.mp3
+            ├── 001._Paul_Van_Dyk_-_Lights-007.mp3
+            ├── 001._Paul_Van_Dyk_-_Lights-008.mp3
+            ├── 001._Paul_Van_Dyk_-_Lights-009.mp3
+            ├── 001._Paul_Van_Dyk_-_Lights-010.mp3
+            ├── 001._Paul_Van_Dyk_-_Lights-011.mp3
+            ├── 001._Paul_Van_Dyk_-_Lights-012.mp3
+            ├── 002._Zedd,_Bahari_-_Addicted_To_A_Memory-000.mp3
+            ├── 002._Zedd,_Bahari_-_Addicted_To_A_Memory-001.mp3
+            ├── 002._Zedd,_Bahari_-_Addicted_To_A_Memory-002.mp3
+            ├── 002._Zedd,_Bahari_-_Addicted_To_A_Memory-003.mp3
+            ├── 002._Zedd,_Bahari_-_Addicted_To_A_Memory-004.mp3
+            ├── 002._Zedd,_Bahari_-_Addicted_To_A_Memory-005.mp3
+            ├── 002._Zedd,_Bahari_-_Addicted_To_A_Memory-006.mp3
+            ├── 002._Zedd,_Bahari_-_Addicted_To_A_Memory-007.mp3
+            ├── 002._Zedd,_Bahari_-_Addicted_To_A_Memory-008.mp3
+            ├── 002._Zedd,_Bahari_-_Addicted_To_A_Memory-009.mp3
+            ├── 002._Zedd,_Bahari_-_Addicted_To_A_Memory-010.mp3
+            ├── 003._MOYYO_-_Имя_Moyyo-000.mp3
+            ├── 003._MOYYO_-_Имя_Moyyo-001.mp3
+            ├── 003._MOYYO_-_Имя_Moyyo-002.mp3
+            ├── 003._MOYYO_-_Имя_Moyyo-003.mp3
+            ├── 003._MOYYO_-_Имя_Moyyo-004.mp3
+            ├── 003._MOYYO_-_Имя_Moyyo-005.mp3
+            └── 003._MOYYO_-_Имя_Moyyo-006.mp3
+
+7 directories, 105 files

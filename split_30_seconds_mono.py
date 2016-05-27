@@ -53,7 +53,7 @@ if __name__=="__main__":
     #     batch_thirty_seconds(folder_path,file_format)
     #     batch_mono(folder_path,file_format)
 
-    file_format = "au"
-    folder_path = "dataset/gztan_split_10sec"
+    file_format = "mp3"
+    folder_path = "dataset/my_data_set"
 
     batch_thirty_seconds(folder_path,file_format)

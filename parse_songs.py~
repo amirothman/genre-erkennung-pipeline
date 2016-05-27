@@ -84,7 +84,7 @@ def build_vectors(keyword="",data_label="",lower_limit=None,upper_limit=None,fol
     # # evaluation
     pickle.dump(evaluation_labels,open("pickled_vectors/{1}{0}_evaluation_label.pickle".format(keyword,data_label),"wb"))
     with(open("maxlen_{0}".format(keyword),"w")) as _f:
-        _f.write(str(np.max([maxlen_training,maxlen_evaluation])))
+        _f.write(np.max([maxlen_training,maxlen_evaluation]))
 
 if __name__=="__main__":
     build_vectors(folder_path="dataset/my_data_set",keyword="spectral-contrast_peaks",lower_limit=1)
