@@ -9,7 +9,9 @@ import mfcc_model
 import tempotrack_model
 import spectral_contrast_peaks_model
 import theano as T
-from keras.utils.visualize_util import plot
+from os.path import exists
+import os
+
 
 batch_size = 50
 nb_epoch = 50
@@ -80,7 +82,8 @@ history = final_model.fit([X_1,X_2], y,
                             validation_data=([X_test_1,X_test_2], y_test),
                             shuffle="batch"
                             )
-
+if not os.path.exists("model_weights"):
+    os.makedirs("model_weights")
 final_model.save_weights("model_weights/merged_model_weights.hdf5",overwrite=True)
 
 with open("experimental_results.json","w") as f:
