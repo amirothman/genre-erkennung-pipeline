@@ -3,7 +3,7 @@
 In this guide, I try to describe the steps needed to be taken to perform genre recognition.
 Since this is a machine learning task, we shall follow the typical procedure of:
 
-  * Collecting data
+  * Preparing a dataset
   * Feature extraction
   * Training and testing model
   * Querying model
@@ -36,24 +36,14 @@ And we also need to install some Vamp plugins:
 
 Refer to [here](http://mtg.upf.edu/technologies/melodia?p=Download%20and%20installation) for instructions to install vamp plugins on different platforms.
 
-# Collecting data
+# Preparing a dataset
 
-Most of the methods that are written within this code would have the folder "dataset" as the default directory path for the data. Create that folder inside the main project directory.
+For legal reasons a dataset including music files can not be included. You have to use your own or a thid party one.
 
-    mkdir dataset
-
-Inside this directory, you should create another directory containing your dataset.
-
-    cd dataset
-    mkdir my_data_set
-
-Throughout the code base, we use the convention of train set and test set to separate our training data and testing data. Create those directories:
-
-    cd my_data_set
-    mkdir test
-    mkdir train
-
-Now, you can put your data in the respective directories. The files need to be separated in different folders for different genres. The code would use the name of the directory as the genre. Here is an example of how a dataset directory should look like:
+Most of the methods expect the folder "dataset" as the default directory path for the data. Create that folder inside the main project directory.
+Inside this directory you can use different datasets.
+Throughout the code base, we use the convention of _train_ set and _test_ set to separate our training data and testing data.
+Now, you can put your data in the respective directories with each file in it's own genre folder. The code uses the name of the directory as the genre. Here is an example of how a dataset directory should look like:
 
 ```
 └── my_data_set
@@ -78,37 +68,37 @@ Now, you can put your data in the respective directories. The files need to be s
 
 ```
 
-I've written a bash script `sample_song.sh` to split the dataset into test set and training set. If you are a shell ninja, you can edit the script split the dataset.
+I've written a bash script `sample_song.sh` to automaticcaly split a dataset into test set and training set. If you are a shell ninja, you can edit the script to split the dataset.
 
-By the way, you can have as many genres as you want. Just make sure:
+You can have as many genres as you want. Just make sure:
 
-  * Both training set and testing have the same genres
+  * Both training and testing sets include the same genres
   * The split between test set and training set is sensible
 
 The format of the audio can be any audio format that is supported by sonic-annotator and ffmpeg.
 One preprocessing step before we continue to feature extraction:
 
   * is splitting the audio files into 30 second chunks - to make it more manageable
-  * merge stereo to mono - because we theorized that the genre of a song is independent from this property
 
-To do this, we can use the ``split_30_seconds_mono.py`` script. The method to be used here is ``batch_thirty_seconds(folder_path,file_format)``. In our case, folder_path would be ``my_data_set`` and file_format would be ``mp3``. You should edit this in the main part of the code.
+To do this, we can use the ``split_30_seconds_mono.py`` script. The method used here is ``batch_thirty_seconds(folder_path,file_format)``. In our case, `folder_path` would be ``my_data_set`` and `file_format` would be ``mp3``. You should edit this in the main part of the code.
 
     batch_thirty_seconds(folder_path,file_format)
       folder_path: string of directory path (where the folder train and test is)
       file_format: string of audio format (e.g. 'mp3', 'au', etc.)
 
-Run this script:
+Run `split_30_seconds.py` with:
 
-    python split_30_seconds_mono.py
+    python split_30_seconds_mono.py <path to dataset> <file fomat>
 
 If your audio files contain spaces or some other weird characters, this script will throw an error. You can use the script space_to_underscore.sh to rename them.
 
 # Feature Extraction
 
-Congratulations that you got this far. Now we will do feature extraction. What we will do is first convert the audio files into CSV files with feature, then convert the CSV files into Numpy arrays and serialize them with pickle. We can actually create the numpy arrays directly, skipping the csv files but:
+Congratulations that you got this far. Now we will do feature extraction with `sonic-annotator`. What we will do is to first convert the audio files into CSV files with features, then convert the CSV files into Numpy arrays and serialize them with pickle. We can actually create the numpy arrays directly, skipping the csv files but:
 
   * I was not aware of it during that time (Haha)
   * It's actually much slower. Probably because the vamp host is a python implementation.
+audio file > csv > numpy > pickle
 
 The python script ``extract_features.py`` will be used here. The method is extract_features;
 
@@ -119,7 +109,7 @@ You should edit this in the main part of the code and run the script.
 
     python extract_features.py
 
-After running that script, you will realize a bunch of csv files in your dataset. It may take a while for this process to finish. Have a cup of coffee or a line of cocaine. Depends on which level of a rockstar you are.
+After running that script, you will realize a bunch of csv files in your dataset. It may take a while for this process to finish. Have a cup of coffee or a line of cocaine. Depends on which level of rockstar you are.
 
 Before proceeding, you are going to have to create another directory for your pickled_vectors.
 
