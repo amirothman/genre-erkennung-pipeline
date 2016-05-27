@@ -83,9 +83,14 @@ def build_vectors(keyword="",data_label="",lower_limit=None,upper_limit=None,fol
     #
     # # evaluation
     pickle.dump(evaluation_labels,open("pickled_vectors/{1}{0}_evaluation_label.pickle".format(keyword,data_label),"wb"))
+    with(open("maxlen_{0}".format(keyword),"w")) as _f:
+        _f.write(str(np.max([maxlen_training,maxlen_evaluation])))
 
 if __name__=="__main__":
-    pass
-    # build_vectors(keyword="spectral-contrast_peaks",lower_limit=1)
-    # build_vectors(keyword="mfcc_coefficients",lower_limit=1)
+    build_vectors(folder_path="dataset/my_data_set",keyword="spectral-contrast_peaks",lower_limit=1)
+    build_vectors(folder_path="dataset/my_data_set",keyword="mfcc_coefficients",lower_limit=1)
     # build_vectors(keyword="tempotracker_tempo",upper_limit=-1)
+    #create_data_set("dataset/my_data_set",keyword="spectral-contrast_peaks",lower_limit=1)
+    #create_data_set("dataset/my_data_set",keyword="mfcc_coefficients",lower_limit=1)
+    
+    
