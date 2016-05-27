@@ -55,9 +55,9 @@ if __name__=="__main__":
     #     batch_mono(folder_path,file_format)
 
     file_format = "mp3"
-    if len(sys.argv) <= 2:
+    if len(sys.argv) < 2:
         print("missing parameter for dataset path")
-    else
+    else:
         if len(sys.argv) > 2:
              file_format = sys.argv[2]
         batch_thirty_seconds(sys.argv[1], file_format)
