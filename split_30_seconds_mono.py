@@ -1,3 +1,4 @@
+#!/usr/local/bin/python
 import os
 import re
 import subprocess
@@ -54,6 +55,9 @@ if __name__=="__main__":
     #     batch_mono(folder_path,file_format)
 
     file_format = "mp3"
-    folder_path = "dataset/my_data_set"
-
-    batch_thirty_seconds(folder_path,file_format)
+    if len(sys.argv) <= 2:
+        print("missing parameter for dataset path")
+    else
+        if len(sys.argv) > 2:
+             file_format = sys.argv[2]
+        batch_thirty_seconds(sys.argv[1], file_format)
