@@ -12,9 +12,9 @@ def extract_features(path="."):
                       ]
 
     for feature in audio_features:
-        cmd = "sonic-annotator -d {0} {1} -r -w csv --csv-stdout".format(feature,path)
+        cmd = "sonic-annotator -d {0} {1} -r -w csv --csv-force".format(feature,path)
         p = Popen(cmd.split(), stdin=PIPE, stdout=PIPE, stderr=PIPE)
-        output, err = p.communicate(b"input data that is passed to subprocess' stdin")
+        output, err = p.communicate()
         print(output)
 
 def extract_features_single(path="."):
@@ -25,7 +25,7 @@ def extract_features_single(path="."):
                       ]
 
     for feature in audio_features:
-        cmd = "sonic-annotator -d {0} {1} -w csv --csv-stdout".format(feature,path)
+        cmd = "sonic-annotator -d {0} {1} -w csv --csv-force".format(feature,path)
         subprocess.call(cmd.split())
         resultCSV = subprocess.communicate()[0]
         print(resultCSV)
