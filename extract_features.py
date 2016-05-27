@@ -1,5 +1,8 @@
+#!/usr/local/bin/python
 import subprocess
-from split_30_seconds_mono import iterate_audio
+from subprocess import Popen, PIPE
+import sys
+from split_30_seconds import iterate_audio
 
 def extract_features(path="."):
     audio_features = [
@@ -9,8 +12,10 @@ def extract_features(path="."):
                       ]
 
     for feature in audio_features:
-        cmd = "sonic-annotator -d {0} {1} -r -w csv --csv-force".format(feature,path)
-        subprocess.call(cmd.split())
+        cmd = "sonic-annotator -d {0} {1} -r -w csv --csv-stdout".format(feature,path)
+        p = Popen(cmd.split(), stdin=PIPE, stdout=PIPE, stderr=PIPE)
+        output, err = p.communicate(b"input data that is passed to subprocess' stdin")
+        print(output)
 
 def extract_features_single(path="."):
     audio_features = [
@@ -20,8 +25,10 @@ def extract_features_single(path="."):
                       ]
 
     for feature in audio_features:
-        cmd = "sonic-annotator -d {0} {1} -w csv --csv-force".format(feature,path)
+        cmd = "sonic-annotator -d {0} {1} -w csv --csv-stdout".format(feature,path)
         subprocess.call(cmd.split())
+        resultCSV = subprocess.communicate()[0]
+        print(resultCSV)
 
 if __name__=="__main__":
     # extract_features("dataset/gztan_split_10sec")
@@ -32,5 +39,7 @@ if __name__=="__main__":
     # extract_features("dataset/train/pop")
 
     # extract_features("dataset/train")
-
-    extract_features("dataset/my_data_set")
+    if len(sys.argv) < 2:
+        print("missing parameter for dataset path")
+    else:
+        extract_features(sys.argv[1])
