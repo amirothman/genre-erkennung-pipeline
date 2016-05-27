@@ -17,6 +17,11 @@ copy plugins to /Library/Audio/Plugin-ins/Vamp
 - sklearn
 
 Simply run:
+
 `sudo python3 -m pip install keras`
 
 `sudo python3 -m pip install sklearn`
+
+`sudo python3 -m pip install matplotlib`
+
+
