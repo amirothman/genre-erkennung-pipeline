@@ -111,9 +111,6 @@ You should edit this in the main part of the code and run the script.
 
 After running that script, you will realize a bunch of csv files in your dataset. It may take a while for this process to finish. Have a cup of coffee or a line of cocaine. Depends on which level of rockstar you are.
 
-Before proceeding, you are going to have to create another directory for your pickled_vectors.
-
-    mkdir pickled_vectors
 
 After that step you would have a bunch of csv files. Now to convert them into numpy arrays and pickle them, so you can reuse and abuse them. For this we will turn to ``parse_songs.py``. The method which we will utilize is ``build_vectors``
 
@@ -127,15 +124,15 @@ For our example:
     build_vectors(folder_path="dataset/my_data_set",keyword="spectral-contrast_peaks",lower_limit=1)
     build_vectors(folder_path="dataset/my_data_set",keyword="mfcc_coefficients",lower_limit=1)
 
-As before, you should edit the main part of the code. Run the code.
+As before pass the path to the dataset.
 
-    python parse_songs.py
+    python parse_songs.py <path to dataset>
 
 If you check the folder pickled_vectors you should have your pickled vectors saved there.
 
     ls pickled_vectors
 
-If it is empty, you probably mess up something. Call the ambulance.
+If it is empty, you probably messed up something. Call the ambulance.
 
 # Training Model
 
