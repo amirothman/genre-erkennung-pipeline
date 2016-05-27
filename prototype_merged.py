@@ -72,8 +72,7 @@ print("Fitting")
 # # for i in range(10):
 # #     print("epoch",i)
 
-vector_length = int(len(X_2)/2)
-history = final_model.fit([X_2[:vector_length],X_3[:vector_length]], y[:vector_length],
+history = final_model.fit([X_2,X_3], y,
                             batch_size=batch_size,
                             nb_epoch=nb_epoch,
                             validation_data=([X_test_2,X_test_3], y_test),
