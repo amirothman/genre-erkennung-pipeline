@@ -22,11 +22,12 @@ Now you should have all the code. But not all the data. But first, let's go thro
   * keras (deep learning framework)
   * sklearn (machine learning library)
   * matplotlib (plotting)
+  * hdf5: brew install homebrew/science/hdf5
+  * h5py: sudo pip install h5py
   * youtube-dl (to test data)
 
 Outside of the python libraries we also require some command line tools:
 
-  * ffmpeg (manipulating audio files)
   * sonic-annotator (Vamp feature extraction utility)
 
 And we also need to install some Vamp plugins:
@@ -274,25 +275,16 @@ We shall create another folder for this one particular query.
 
 Let's grab a song on Youtube with youtube-dl.
 
-    youtube-dl -x https://www.youtube.com/watch?v=VDvr08sCPOc
+    youtube-dl -x --audio-format mp3 https://www.youtube.com/watch?v=VDvr08sCPOc
 
 For hacky reasons, the filename of the song needs to correspond to the name of the folder.
 
     mv Remember\ The\ Name\ \(Official\ Video\)\ -\ Fort\ Minor-VDvr08sCPOc.opus song_1.opus
 
-sonic-annotator does not support the opus file format. We are going to need to convert it to mp3 , or what ever format that you like as long as sonic-annotator supports it.
-
-    ffmpeg -i song_1.opus song_1.mp3
-
-We are going to have delete the dot opus file. Again, for hacky my-code-kinda-sucks reasons.
-
-    rm song_1.opus
-
 Now let's edit querying_genre.py so that it corresponds to our song query.
 
 ```
 song_name_without_ending = "dataset/query/song_1/song_1"
-file_format = "mp3"
 song_folder = "dataset/query/song_1"
 
 ```
