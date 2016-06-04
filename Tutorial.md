@@ -112,7 +112,7 @@ You should edit this in the main part of the code and run the script.
 After running that script, you will realize a bunch of csv files in your dataset. It may take a while for this process to finish. Have a cup of coffee or a line of cocaine. Depends on which level of rockstar you are.
 
 
-After that step you would have a bunch of csv files. Now to convert them into numpy arrays and pickle them, so you can reuse and abuse them. For this we will turn to ``parse_songs.py``. The method which we will utilize is ``build_vectors``
+After that step you would have a bunch of csv files. Now to convert them into numpy arrays and pickle them, so you can reuse and abuse them. For this we will turn to ``parse_features.py``. The method which we will utilize is ``build_vectors``
 
     build_vectors(folder_path,keyword,lower_limit)
       folder_path: string for path of dataset
@@ -126,7 +126,7 @@ For our example:
 
 As before pass the path to the dataset.
 
-    python parse_songs.py <path to dataset>
+    python parse_features.py <path to dataset>
 
 If you check the folder pickled_vectors you should have your pickled vectors saved there.
 
