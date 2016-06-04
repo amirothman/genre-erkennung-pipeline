@@ -275,11 +275,11 @@ We shall create another folder for this one particular query.
 
 Let's grab a song on Youtube with youtube-dl.
 
-    youtube-dl -x --audio-format mp3 https://www.youtube.com/watch?v=VDvr08sCPOc
+    youtube-dl --extract-audio --audio-format mp3 https://www.youtube.com/watch?v=VDvr08sCPOc
 
 For hacky reasons, the filename of the song needs to correspond to the name of the folder.
 
-    mv Remember\ The\ Name\ \(Official\ Video\)\ -\ Fort\ Minor-VDvr08sCPOc.opus song_1.opus
+    mv Remember\ The\ Name\ \(Official\ Video\)\ -\ Fort\ Minor-VDvr08sCPOc.mp3 song_1.mp3
 
 Now let's edit querying_genre.py so that it corresponds to our song query.
 
