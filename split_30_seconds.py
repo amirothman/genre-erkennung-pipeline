@@ -3,6 +3,7 @@ import os
 import re
 import subprocess
 import os.path
+import sys
 
 def iterate_audio(path="."):
     for root, dirs, files in os.walk(path, topdown=False):
@@ -63,6 +64,4 @@ if __name__=="__main__":
     if len(sys.argv) < 2:
         print("missing parameter for dataset path")
     else:
-        if len(sys.argv) > 2:
-             file_format = sys.argv[2]
         batch_thirty_seconds(sys.argv[1])
