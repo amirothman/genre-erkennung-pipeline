@@ -1,16 +1,18 @@
 #!/bin/bash
 
+#example url http://youtube.com/watch?v=PNjG22Gbo6U
 if [ "$#" -ne 1 ]; then
 	echo "pass youtube url as parameter"
 else
 	cd $(dirname "$0")
-	youtube-dl $1 -x  --audio-format mp3 --restrict-filenames -o 'testfile.mp3' #download file
-	printf "File downloaded \n"
-	python3 ./extract_features.py testfile.mp3 #extract features
-	printf "Features extracted \n"
-	python3 ./parse_features.py testfile.mp3 #decode features
-	printf "parsing features \n"
-	# $1[0:-3]*.csv #remove csv files
-	printf "Cleanup failed \n"
+	youtube-dl --extract-audio --audio-format mp3 -o "testfile.%(ext)s" $1 #download file
+	printf "\nFile downloaded \n"
+	#python3 ./extract_features.py testfile.mp3 #extract features
+	#delete file
+	#rm ./testfile.mp3
+	#printf "\nFeatures extracted \n"
+	python3 ./querying_genre.py testfile.mp3 #decode features
+	printf "\nparsed features \n"
+	find *.csv -type f -delete -depth 1
+	printf "Cleanup performed \n"
 fi
-
