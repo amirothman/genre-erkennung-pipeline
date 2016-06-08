@@ -25,7 +25,7 @@ def extract_features_single(path="."):
 
 if __name__=="__main__":
     # extract_features("dataset/gztan_split_10sec")
-    #for audio_path in iterate_audio(format_ending="au",path="dataset/gztan_split_10sec"):
+
     #    extract_features_single(audio_path)
     # extract_features("dataset/train/hiphop")
     # extract_features("dataset/train/rock")
@@ -36,7 +36,8 @@ if __name__=="__main__":
         print("missing parameter for dataset or file path")
     else:
         if os.path.isdir(sys.argv[1]):
-            extract_features(sys.argv[1])
+            for audio_path in iterate_audio(path=sys.argv[1]):
+                extract_features_single(audio_path)
         else:
             extract_features_single(sys.argv[1])
     
