@@ -36,8 +36,9 @@ if __name__=="__main__":
         print("missing parameter for dataset or file path")
     else:
         if os.path.isdir(sys.argv[1]):
-            for audio_path in iterate_audio(path=sys.argv[1]):
-                extract_features_single(audio_path)
+            for file in iterate_audio(path=sys.argv[1]):
+                print("extracing" + file)
+                extract_features_single(file)
         else:
             extract_features_single(sys.argv[1])
     

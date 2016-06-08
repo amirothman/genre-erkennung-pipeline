@@ -4,12 +4,22 @@ np.random.seed(1337)  # for reproducibility
 from keras.models import model_from_json, Sequential
 import json
 from extract_features import extract_features
-from split_30_seconds import batch_thirty_seconds,to_mono
+from split_30_seconds import batch_thirty_seconds, thirty_seconds
 import os
 import re
 import sys
 from numpy import genfromtxt
 from keras.preprocessing import sequence
+
+def saveToFile(genreResult):
+    #if has another id save to file
+    if len(sys.argv) > 2:
+        id = sys.argv[2]
+        if not os.path.exists("results"):
+            os.makedirs("results")
+        f = open('results/'+id+".txt", 'w')
+        f.write(genreResult)
+        f.close()
 
 if not os.path.exists("model_weights/merged_model_weights.hdf5"):
     print("No model weights found in path 'model_weights/merged_model_weights.hdf5'")
@@ -25,14 +35,18 @@ else:
     if len(sys.argv) < 2:
         print("missing parameter")
     else:
-        
         filename = sys.argv[1]
         song_folder = os.path.dirname(os.path.realpath(filename))#should get the directory to the file
 
-        #to_mono(filename)
-        batch_thirty_seconds(song_folder)
-        extract_features(song_folder)
-
+        if os.path.isdir(filename):
+            batch_thirty_seconds(song_folder)
+            extract_features(song_folder)
+        else:
+            thirty_seconds(filename)
+            print("File split. Now extracting features.")
+            extract_features(song_folder)
+            print("Extracted features.")
+             
         keyword_2 = "mfcc_coefficients"
 
         x2 = []
@@ -40,7 +54,6 @@ else:
             for name in files:
                 if re.search(keyword_2+".csv",name):
                     song_path = (os.path.join(root,name))
-                    print(song_path)
 
                     song_features = genfromtxt(song_path, delimiter=",")
 
@@ -64,7 +77,6 @@ else:
             for name in files:
                 if re.search(keyword_3+".csv",name):
                     song_path = (os.path.join(root,name))
-                    print(song_path)
                     song_features = genfromtxt(song_path, delimiter=",")
 
                     if len(song_features.shape) is 2:
@@ -81,4 +93,11 @@ else:
         x3 = sequence.pad_sequences(x3, maxlen=spectral_max_len,dtype='float32')
 
         predictions = model.predict_classes([x2,x3])
-        print(predictions)
+        genredict = ["genre1","genre2", "genre3"]
+        resultstring = ""
+        for p in predictions:
+            resultstring += genredict[p]+" "
+        print(resultstring)
+        
+        saveToFile(resultstring)
+
