@@ -14,5 +14,6 @@ else
 	python3 ./querying_genre.py testfile.mp3 #decode features
 	printf "\nparsed features \n"
 	find *.csv -type f -delete -depth 1
+	find *.mp3 -type f -delete -depth 1
 	printf "Cleanup performed \n"
 fi
