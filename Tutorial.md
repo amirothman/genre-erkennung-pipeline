@@ -92,7 +92,7 @@ batch_thirty_seconds(folder_path,file_format)
 Run `split_30_seconds.py` with:
 
 ```shell
-python split_30_seconds_mono.py <path to dataset> <file fomat>
+python split_30_seconds.py <path to dataset>
 ```
 
 If your audio files contain spaces or some other weird characters, this script will throw an error. You can use the script space_to_underscore.sh to rename them.
@@ -113,7 +113,7 @@ The python script ``extract_features.py`` will be used here. The method is extra
 You should edit this in the main part of the code and run the script.
 
 ```shell
-python extract_features.py
+python extract_features.py <path to dataset or single file>
 ```
 After running that script, you will realize a bunch of csv files in your dataset. It may take a while for this process to finish. Have a cup of coffee or a line of cocaine. Depends on which level of rockstar you are.
 
@@ -136,7 +136,9 @@ build_vectors(folder_path="dataset/my_data_set",keyword="mfcc_coefficients",lowe
 
 As before pass the path to the dataset.
 
-    python parse_features.py <path to dataset>
+```shell
+python parse_features.py <path to dataset>
+```
 
 If you check the folder pickled_vectors you should have your pickled vectors saved there.
 If it is empty, you probably messed up something. Call the ambulance.
@@ -281,31 +283,10 @@ And also the right weights:
 
     model.load_weights("model_weights/merged_model_weights.hdf5")
 
-Now for the song in question. Let's put that song inside dataset in the folder query
-
-    cd dataset
-    mkdir query
-
-We shall create another folder for this one particular query.
-
-    cd query
-    mkdir song_1
-
-Let's grab a song on Youtube with youtube-dl.
-
+###An example
 ```shell
-youtube-dl --extract-audio --audio-format mp3 https://www.youtube.com/watch?v=VDvr08sCPOc
+getGenreFromYoutube.sh https://www.youtube.com/watch?v=VDvr08sCPOc
 ```
-
-For hacky reasons, the filename of the song needs to correspond to the name of the folder.
-
-```shell
-mv Remember\ The\ Name\ \(Official\ Video\)\ -\ Fort\ Minor-VDvr08sCPOc.mp3 song_1.mp3
-```
-
-Let's run this script.
-
-    python querying_genre.py <path to file>
 
 An example of the output would be something like:
 
