@@ -63,7 +63,7 @@ def create_dataset(dataset_path, keyword=None, lower_limit=None, upper_limit=Non
 
 def build_vectors(keyword="",data_label="",lower_limit=None,upper_limit=None,folder_path="dataset"):
     # training
-    training_vector,labels,maxlen_training = create_dataset(dataset_path = "{0}/train".format(folder_path),keyword=keyword,lower_limit=lower_limit,upper_limit=upper_limit)
+    training_vector,labels,maxlen_training = create_dataset(dataset_path = folder_path+"/train",keyword=keyword,lower_limit=lower_limit,upper_limit=upper_limit)
 
     # validation
     evaluation_training_vector,evaluation_labels,maxlen_evaluation = create_dataset(dataset_path = "{0}/test".format(folder_path),keyword=keyword,lower_limit=lower_limit,upper_limit=upper_limit)

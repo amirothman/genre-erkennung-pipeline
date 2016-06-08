@@ -35,10 +35,10 @@ else:
 
         keyword_2 = "mfcc_coefficients"
 
-        X_2 = []
+        x2 = []
         for root, dirs, files in os.walk(song_folder, topdown=False):
             for name in files:
-                if re.search("{0}.csv".format(keyword_2),name):
+                if re.search(keyword_2+".csv",name):
                     song_path = (os.path.join(root,name))
                     print(song_path)
 
@@ -49,20 +49,20 @@ else:
                     elif len(song_features.shape) is 1:
                         song_features = np.array([song_features[1:]])
 
-                    X_2.append(song_features)
+                    x2.append(song_features)
 
         mfcc_max_len = 0
 
         with( open("maxlen_mfcc_coefficients","r") ) as _f:
             mfcc_max_len = int(_f.read())
 
-        X_2 = sequence.pad_sequences(X_2, maxlen=mfcc_max_len,dtype='float32')
+        x2 = sequence.pad_sequences(x2, maxlen=mfcc_max_len,dtype='float32')
 
         keyword_3 = "spectral-contrast_peaks"
-        X_3 = []
+        x3 = []
         for root, dirs, files in os.walk(song_folder, topdown=False):
             for name in files:
-                if re.search("{0}.csv".format(keyword_3),name):
+                if re.search(keyword_3+".csv",name):
                     song_path = (os.path.join(root,name))
                     print(song_path)
                     song_features = genfromtxt(song_path, delimiter=",")
@@ -72,13 +72,13 @@ else:
                     elif len(song_features.shape) is 1:
                         song_features = np.array([song_features[1:]])
 
-                    X_3.append(song_features)
+                    x3.append(song_features)
 
         spectral_max_len = 0
         with( open("maxlen_spectral-contrast_peaks","r") ) as _f:
             spectral_max_len = int(_f.read())
 
-        X_3 = sequence.pad_sequences(X_3, maxlen=spectral_max_len,dtype='float32')
+        x3 = sequence.pad_sequences(x3, maxlen=spectral_max_len,dtype='float32')
 
-        predictions = model.predict_classes([X_2,X_3])
+        predictions = model.predict_classes([x2,x3])
         print(predictions)
