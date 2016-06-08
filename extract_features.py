@@ -14,9 +14,9 @@ audio_features = [
 def extract_features(path="."):
     for feature in audio_features:
         cmd = "sonic-annotator -d {0} {1} -r -w csv --csv-force".format(feature,path)
-        p = Popen(cmd.split(), stdin=PIPE, stdout=PIPE, stderr=PIPE)
-        output, err = p.communicate()
-        print(output)
+        subprocess.call(cmd.split())
+        #p = Popen(cmd.split(), stdin=PIPE, stdout=PIPE, stderr=PIPE)
+        #output, err = p.communicate()
 
 def extract_features_single(path="."):
     for feature in audio_features:
