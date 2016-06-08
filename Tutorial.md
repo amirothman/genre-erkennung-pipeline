@@ -12,21 +12,23 @@ Since this is a machine learning task, we shall follow the typical procedure of:
 
 Firstly, I am not a super l33t 10x software engineer and I cobbled up most of this code in a day.
 So, a lot of restructuring and refactoring should and could be done. This guide will show how to use the code as is. Clone the git repo, and switch the branch to working-model-0.1
-
-    git clone https://github.com/amirothman/genre-erkennung-pipeline
-    cd genre-erkennung-pipeline
-    git checkout working-model-0.1
+```shell
+git clone https://github.com/amirothman/genre-erkennung-pipeline
+cd genre-erkennung-pipeline
+git checkout working-model-0.1
+```
 
 Now you should have all the code. But not all the data. But first, let's go through the requirement:
 
   * keras (deep learning framework)
   * sklearn (machine learning library)
   * matplotlib (plotting)
+  * hdf5: brew install homebrew/science/hdf5
+  * h5py: sudo pip install h5py
   * youtube-dl (to test data)
 
 Outside of the python libraries we also require some command line tools:
 
-  * ffmpeg (manipulating audio files)
   * sonic-annotator (Vamp feature extraction utility)
 
 And we also need to install some Vamp plugins:
@@ -80,15 +82,18 @@ One preprocessing step before we continue to feature extraction:
 
   * is splitting the audio files into 30 second chunks - to make it more manageable
 
-To do this, we can use the ``split_30_seconds_mono.py`` script. The method used here is ``batch_thirty_seconds(folder_path,file_format)``. In our case, `folder_path` would be ``my_data_set`` and `file_format` would be ``mp3``. You should edit this in the main part of the code.
-
-    batch_thirty_seconds(folder_path,file_format)
-      folder_path: string of directory path (where the folder train and test is)
-      file_format: string of audio format (e.g. 'mp3', 'au', etc.)
+To do this, we can use the ``split_30_seconds.py`` script. The method used here is ``batch_thirty_seconds(folder_path,file_format)``. In our case, `folder_path` would be ``my_data_set`` and `file_format` would be ``mp3``. You should edit this in the main part of the code.
+```python
+batch_thirty_seconds(folder_path,file_format)
+```
+* folder_path: string of directory path (where the folder train and test is)
+* file_format: string of audio format (e.g. 'mp3', 'au', etc.)
 
 Run `split_30_seconds.py` with:
 
-    python split_30_seconds_mono.py <path to dataset> <file fomat>
+```shell
+python split_30_seconds_mono.py <path to dataset> <file fomat>
+```
 
 If your audio files contain spaces or some other weird characters, this script will throw an error. You can use the script space_to_underscore.sh to rename them.
 
@@ -107,31 +112,33 @@ The python script ``extract_features.py`` will be used here. The method is extra
 
 You should edit this in the main part of the code and run the script.
 
-    python extract_features.py
-
+```shell
+python extract_features.py
+```
 After running that script, you will realize a bunch of csv files in your dataset. It may take a while for this process to finish. Have a cup of coffee or a line of cocaine. Depends on which level of rockstar you are.
 
 
-After that step you would have a bunch of csv files. Now to convert them into numpy arrays and pickle them, so you can reuse and abuse them. For this we will turn to ``parse_songs.py``. The method which we will utilize is ``build_vectors``
+After that step you would have a bunch of csv files. Now to convert them into numpy arrays and pickle them, so you can reuse and abuse them. For this we will turn to ``parse_features.py``. The method which we will utilize is ``build_vectors``
 
-    build_vectors(folder_path,keyword,lower_limit)
-      folder_path: string for path of dataset
-      keyword: string for keyword of feature e.g. "spectral-contrast_peaks". This will be used to match the csv file output by sonic-annotator
-      lower_limit: integer for the index of column of the csv file to use. The first column is a timestamp. Sometimes, we do not want this in our array.
-
+```python
+build_vectors(folder_path,keyword,lower_limit)
+```
+* folder_path: string for path of dataset
+* keyword: string for keyword of feature e.g. "spectral-contrast_peaks". This will be used to match the csv file output by sonic-annotator
+* lower_limit: integer for the index of column of the csv file to use. The first column is a timestamp. Sometimes, we do not want this in our array.
+    
 For our example:
 
-    build_vectors(folder_path="dataset/my_data_set",keyword="spectral-contrast_peaks",lower_limit=1)
-    build_vectors(folder_path="dataset/my_data_set",keyword="mfcc_coefficients",lower_limit=1)
+```python
+build_vectors(folder_path="dataset/my_data_set",keyword="spectral-contrast_peaks",lower_limit=1)
+build_vectors(folder_path="dataset/my_data_set",keyword="mfcc_coefficients",lower_limit=1)
+```
 
 As before pass the path to the dataset.
 
-    python parse_songs.py <path to dataset>
+    python parse_features.py <path to dataset>
 
 If you check the folder pickled_vectors you should have your pickled vectors saved there.
-
-    ls pickled_vectors
-
 If it is empty, you probably messed up something. Call the ambulance.
 
 # Training Model
@@ -143,24 +150,28 @@ Awesome. You've reached here. This is the machine learning step. The most intere
 ![mfcc model](mfcc_model.png)
 
 Change the X, y, X_test, and y_test variable to load the pickled vectors of your desire. If you are following this tutorial, it would be:
+```python
+X = pickle.load(open("pickled_vectors/mfcc_coefficients_training_vector.pickle","rb"))
+y = pickle.load(open("pickled_vectors/mfcc_coefficients_label.pickle","rb"))
 
-    X = pickle.load(open("pickled_vectors/mfcc_coefficients_training_vector.pickle","rb"))
-    y = pickle.load(open("pickled_vectors/mfcc_coefficients_label.pickle","rb"))
-
-    X_test = pickle.load(open("pickled_vectors/mfcc_coefficients_evaluation_training_vector.pickle","rb"))
-    y_test = pickle.load(open("pickled_vectors/mfcc_coefficients_evaluation_label.pickle","rb"))
+X_test = pickle.load(open("pickled_vectors/mfcc_coefficients_evaluation_training_vector.pickle","rb"))
+y_test = pickle.load(open("pickled_vectors/mfcc_coefficients_evaluation_label.pickle","rb"))
+```
 
 Now you can run this model with:
 
-    python mfcc_model.py
+```shell
+python mfcc_model.py
+```
 
 Or if you have configured CUDA on your machine, you can also use keras_gpu.sh. This is probably the wrongest hackiest way to run Theano code with Cuda but, it works for now.
 
     sh keras_gpu.sh mfcc_model.py
 
 One thing that you may have to further edit is the number of outputs of your neural network. On this line:
-
-    model.add(Dense(2))
+```python
+model.add(Dense(2))
+```
 
 2 refers to 2 genres. If your dataset have 10 genres, change it 10.
 
@@ -169,16 +180,18 @@ One thing that you may have to further edit is the number of outputs of your neu
 ![spectral contrast model](spectral-contrast_peaks_model.png)
 
 As before, change the X, y, X_test, and y_test variable to load the pickled vectors of your desire. For our example:
+```python
+X = pickle.load(open("pickled_vectors/spectral-contrast_peaks_training_vector.pickle","rb"))
+y = pickle.load(open("pickled_vectors/spectral-contrast_peaks_label.pickle","rb"))
 
-    X = pickle.load(open("pickled_vectors/spectral-contrast_peaks_training_vector.pickle","rb"))
-    y = pickle.load(open("pickled_vectors/spectral-contrast_peaks_label.pickle","rb"))
-
-    X_test = pickle.load(open("pickled_vectors/spectral-contrast_peaks_evaluation_training_vector.pickle","rb"))
-    y_test = pickle.load(open("pickled_vectors/spectral-contrast_peaks_evaluation_label.pickle","rb"))
+X_test = pickle.load(open("pickled_vectors/spectral-contrast_peaks_evaluation_training_vector.pickle","rb"))
+y_test = pickle.load(open("pickled_vectors/spectral-contrast_peaks_evaluation_label.pickle","rb"))
+```
 
 Now you can run this model with:
-
-    python spectral_contrast_peaks_model.py
+```shell
+python spectral_contrast_peaks_model.py
+```
 
 Or if you have configured CUDA on your machine, you can also use keras_gpu.sh. This is probably the wrongest hackiest way to run Theano code with Cuda but, it works for now.
 
@@ -186,7 +199,9 @@ Or if you have configured CUDA on your machine, you can also use keras_gpu.sh. T
 
 One thing that you may have to further edit is the number of outputs of your neural network. On this line:
 
-    model.add(Dense(2))
+```python
+model.add(Dense(2))
+```
 
 2 refers to 2 genres. If your dataset have 10 genres, change it 10.
 
@@ -195,20 +210,20 @@ One thing that you may have to further edit is the number of outputs of your neu
 ![merged model](model.png)
 
 Here, we have merged model. It combining the two previous model and concatenate them into one model. We have two different example (X vectors), so a bit different than before, we will have to change X_1, X_2, X_test_1, X_test_2, y and y_test. For our example:
+```python
+y = pickle.load(open("pickled_vectors/mfcc_coefficients_label.pickle","rb"))
+y_test = pickle.load(open("pickled_vectors/mfcc_coefficients_evaluation_label.pickle","rb"))
 
-    y = pickle.load(open("pickled_vectors/mfcc_coefficients_label.pickle","rb"))
-    y_test = pickle.load(open("pickled_vectors/mfcc_coefficients_evaluation_label.pickle","rb"))
+X_1 = pickle.load(open("pickled_vectors/mfcc_coefficients_training_vector.pickle","rb"))
+X_test_1 = pickle.load(open("pickled_vectors/mfcc_coefficients_evaluation_training_vector.pickle","rb"))
 
-    X_1 = pickle.load(open("pickled_vectors/mfcc_coefficients_training_vector.pickle","rb"))
-    X_test_1 = pickle.load(open("pickled_vectors/mfcc_coefficients_evaluation_training_vector.pickle","rb"))
-
-    X_2 = pickle.load(open("pickled_vectors/spectral-contrast_peaks_training_vector.pickle","rb"))
-    X_test_2 = pickle.load(open("pickled_vectors/spectral-contrast_peaks_evaluation_training_vector.pickle","rb"))
-
+X_2 = pickle.load(open("pickled_vectors/spectral-contrast_peaks_training_vector.pickle","rb"))
+X_test_2 = pickle.load(open("pickled_vectors/spectral-contrast_peaks_evaluation_training_vector.pickle","rb"))
+```
 One thing that you may have to further edit is the number of outputs of your neural network. On this line:
-
-    model.add(Dense(2))
-
+```python
+model.add(Dense(2))
+```
 2 refers to 2 genres. If your dataset have 10 genres, change it 10.
 
 Before running this model, you may want to save the weights some where. Let's create that directory.
@@ -217,11 +232,15 @@ Before running this model, you may want to save the weights some where. Let's cr
 
 Uncomment the following line:
 
-    final_model.save_weights("model_weights/merged_model_weights.hdf5",overwrite=True)
+```python
+final_model.save_weights("model_weights/merged_model_weights.hdf5",overwrite=True)
+````
 
 Now you can run this model with:
 
-    python prototype_merged.py
+```shell
+python prototype_merged.py
+```
 
 Or if you have configured CUDA on your machine, you can also use keras_gpu.sh. This is probably the wrongest hackiest way to run Theano code with Cuda but, it works for now.
 
@@ -237,10 +256,10 @@ Now you would like to ask the model. By giving it a song, what would the model p
 
 The merge model, saved it's architecture into a json file. This happened in the following part of the prototype_merged.py
 
-```
-  json_string = final_model.to_json()
-  with open("model_architecture/merged_model_architecture.json","w") as f:
-      f.write(json.dumps(json_string, sort_keys=True,indent=4, separators=(',', ': ')))
+```python
+json_string = final_model.to_json()
+with open("model_architecture/merged_model_architecture.json","w") as f:
+    f.write(json.dumps(json_string, sort_keys=True,indent=4, separators=(',', ': ')))
 ```
 
 The trained weights should be saved in the following hdf5 file:
@@ -255,9 +274,9 @@ So what we have to do to query the model are:
 
 
 For this purpose, the script querying_genre.py is made. Make sure the right architecture is loaded:
-
-    json_string = json.load(open("model_architecture/merged_model_architecture.json","r"))
-
+```python
+json_string = json.load(open("model_architecture/merged_model_architecture.json","r"))
+````
 And also the right weights:
 
     model.load_weights("model_weights/merged_model_weights.hdf5")
@@ -274,32 +293,19 @@ We shall create another folder for this one particular query.
 
 Let's grab a song on Youtube with youtube-dl.
 
-    youtube-dl -x https://www.youtube.com/watch?v=VDvr08sCPOc
+```shell
+youtube-dl --extract-audio --audio-format mp3 https://www.youtube.com/watch?v=VDvr08sCPOc
+```
 
 For hacky reasons, the filename of the song needs to correspond to the name of the folder.
 
-    mv Remember\ The\ Name\ \(Official\ Video\)\ -\ Fort\ Minor-VDvr08sCPOc.opus song_1.opus
-
-sonic-annotator does not support the opus file format. We are going to need to convert it to mp3 , or what ever format that you like as long as sonic-annotator supports it.
-
-    ffmpeg -i song_1.opus song_1.mp3
-
-We are going to have delete the dot opus file. Again, for hacky my-code-kinda-sucks reasons.
-
-    rm song_1.opus
-
-Now let's edit querying_genre.py so that it corresponds to our song query.
-
-```
-song_name_without_ending = "dataset/query/song_1/song_1"
-file_format = "mp3"
-song_folder = "dataset/query/song_1"
-
+```shell
+mv Remember\ The\ Name\ \(Official\ Video\)\ -\ Fort\ Minor-VDvr08sCPOc.mp3 song_1.mp3
 ```
 
 Let's run this script.
 
-    python querying_genre.py
+    python querying_genre.py <path to file>
 
 An example of the output would be something like:
 
