@@ -145,7 +145,7 @@ if __name__=="__main__":
         plt.plot(range(0,len(v)),v,marker="8",linewidth=1.5)
     if not os.path.exists("model_weights"):
         os.makedirs("model_weights")
-    final_model.save_weights("model_weights/mfcc_model_weights.hdf5",overwrite=True)                                              
+    model.save_weights("model_weights/mfcc_model_weights.hdf5",overwrite=True)                                              
     
     plt.tight_layout(pad=0.4, w_pad=0.5, h_pad=1.0)
     plt.show()
