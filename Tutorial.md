@@ -92,7 +92,7 @@ batch_thirty_seconds(folder_path,file_format)
 Run `split_30_seconds.py` with:
 
 ```shell
-python split_30_seconds.py <path to dataset>
+python3 split_30_seconds.py <path to dataset>
 ```
 
 If your audio files contain spaces or some other weird characters, this script will throw an error. You can use the script space_to_underscore.sh to rename them.
@@ -105,12 +105,7 @@ Congratulations that you got this far. Now we will do feature extraction with `s
   * It's actually much slower. Probably because the vamp host is a python implementation.
 audio file > csv > numpy > pickle
 
-The python script ``extract_features.py`` will be used here. The method is extract_features;
-
-  extract_features(path)
-    path: string of data path to do feature extraction
-
-You should edit this in the main part of the code and run the script.
+The python script ``extract_features.py`` will be used here.
 
 ```shell
 python extract_features.py <path to dataset or single file>
@@ -118,7 +113,7 @@ python extract_features.py <path to dataset or single file>
 After running that script, you will realize a bunch of csv files in your dataset. It may take a while for this process to finish. Have a cup of coffee or a line of cocaine. Depends on which level of rockstar you are.
 
 
-After that step you would have a bunch of csv files. Now to convert them into numpy arrays and pickle them, so you can reuse and abuse them. For this we will turn to ``parse_features.py``. The method which we will utilize is ``build_vectors``
+After that step you will have a bunch of csv files. Now convert them into numpy arrays and pickle them, so you can reuse and abuse them. For this we will turn to ``parse_features.py``. The used method is ``build_vectors``
 
 ```python
 build_vectors(folder_path,keyword,lower_limit)
@@ -126,14 +121,13 @@ build_vectors(folder_path,keyword,lower_limit)
 * folder_path: string for path of dataset
 * keyword: string for keyword of feature e.g. "spectral-contrast_peaks". This will be used to match the csv file output by sonic-annotator
 * lower_limit: integer for the index of column of the csv file to use. The first column is a timestamp. Sometimes, we do not want this in our array.
-    
+
 For our example:
 
 ```python
 build_vectors(folder_path="dataset/my_data_set",keyword="spectral-contrast_peaks",lower_limit=1)
 build_vectors(folder_path="dataset/my_data_set",keyword="mfcc_coefficients",lower_limit=1)
 ```
-
 As before pass the path to the dataset.
 
 ```shell
@@ -163,7 +157,7 @@ y_test = pickle.load(open("pickled_vectors/mfcc_coefficients_evaluation_label.pi
 Now you can run this model with:
 
 ```shell
-python mfcc_model.py
+python3 mfcc_model.py
 ```
 
 Or if you have configured CUDA on your machine, you can also use keras_gpu.sh. This is probably the wrongest hackiest way to run Theano code with Cuda but, it works for now.
@@ -241,7 +235,7 @@ final_model.save_weights("model_weights/merged_model_weights.hdf5",overwrite=Tru
 Now you can run this model with:
 
 ```shell
-python prototype_merged.py
+python3 prototype_merged.py
 ```
 
 Or if you have configured CUDA on your machine, you can also use keras_gpu.sh. This is probably the wrongest hackiest way to run Theano code with Cuda but, it works for now.
