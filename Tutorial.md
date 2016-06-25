@@ -99,7 +99,7 @@ To do this, we can use the ``split_30_seconds_mono.py`` script. The method to be
 
 Run this script:
 
-    python split_30_seconds_mono.py
+    python3 split_30_seconds_mono.py
 
 If your audio files contain spaces or some other weird characters, this script will throw an error. You can use the script space_to_underscore.sh to rename them.
 
@@ -117,7 +117,7 @@ The python script ``extract_features.py`` will be used here. The method is extra
 
 You should edit this in the main part of the code and run the script.
 
-    python extract_features.py
+    python3 extract_features.py
 
 After running that script, you will realize a bunch of csv files in your dataset. It may take a while for this process to finish. Have a cup of coffee or a line of cocaine. Depends on which level of a rockstar you are.
 
@@ -139,7 +139,7 @@ For our example:
 
 As before, you should edit the main part of the code. Run the code.
 
-    python parse_songs.py
+    python3 parse_songs.py
 
 If you check the folder pickled_vectors you should have your pickled vectors saved there.
 
@@ -165,7 +165,7 @@ Change the X, y, X_test, and y_test variable to load the pickled vectors of your
 
 Now you can run this model with:
 
-    python mfcc_model.py
+    python3 mfcc_model.py
 
 Or if you have configured CUDA on your machine, you can also use keras_gpu.sh. This is probably the wrongest hackiest way to run Theano code with Cuda but, it works for now.
 
@@ -191,7 +191,7 @@ As before, change the X, y, X_test, and y_test variable to load the pickled vect
 
 Now you can run this model with:
 
-    python spectral_contrast_peaks_model.py
+    python3 spectral_contrast_peaks_model.py
 
 Or if you have configured CUDA on your machine, you can also use keras_gpu.sh. This is probably the wrongest hackiest way to run Theano code with Cuda but, it works for now.
 
@@ -234,7 +234,7 @@ Uncomment the following line:
 
 Now you can run this model with:
 
-    python prototype_merged.py
+    python3 prototype_merged.py
 
 Or if you have configured CUDA on your machine, you can also use keras_gpu.sh. This is probably the wrongest hackiest way to run Theano code with Cuda but, it works for now.
 
@@ -312,7 +312,7 @@ song_folder = "dataset/query/song_1"
 
 Let's run this script.
 
-    python querying_genre.py
+    python3 querying_genre.py
 
 An example of the output would be something like:
 
