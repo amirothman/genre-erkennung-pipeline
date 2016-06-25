@@ -14,9 +14,9 @@ audio_features = [
 def extract_features(path="."):
     for feature in audio_features:
         cmd = "sonic-annotator -d {0} {1} -r -w csv --csv-force".format(feature,path)
-        p = Popen(cmd.split(), stdin=PIPE, stdout=PIPE, stderr=PIPE)
-        output, err = p.communicate()
-        print(output)
+        subprocess.call(cmd.split())
+        #p = Popen(cmd.split(), stdin=PIPE, stdout=PIPE, stderr=PIPE)
+        #output, err = p.communicate()
 
 def extract_features_single(path="."):
     for feature in audio_features:
@@ -25,7 +25,7 @@ def extract_features_single(path="."):
 
 if __name__=="__main__":
     # extract_features("dataset/gztan_split_10sec")
-    #for audio_path in iterate_audio(format_ending="au",path="dataset/gztan_split_10sec"):
+
     #    extract_features_single(audio_path)
     # extract_features("dataset/train/hiphop")
     # extract_features("dataset/train/rock")
@@ -36,7 +36,9 @@ if __name__=="__main__":
         print("missing parameter for dataset or file path")
     else:
         if os.path.isdir(sys.argv[1]):
-            extract_features(sys.argv[1])
+            for file in iterate_audio(path=sys.argv[1]):
+                print("extracing" + file)
+                extract_features_single(file)
         else:
             extract_features_single(sys.argv[1])
     

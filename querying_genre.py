@@ -1,87 +1,103 @@
+#!/usr/local/bin/python3
 import numpy as np
 np.random.seed(1337)  # for reproducibility
 from keras.models import model_from_json, Sequential
 import json
 from extract_features import extract_features
-from split_30_seconds_mono import batch_thirty_seconds,to_mono
-from parse_songs import create_data_set
+from split_30_seconds import batch_thirty_seconds, thirty_seconds
 import os
 import re
+import sys
 from numpy import genfromtxt
 from keras.preprocessing import sequence
 
-def process(song_name_without_ending,song_folder,file_format):
-    to_mono(song_name_without_ending,file_format)
-    batch_thirty_seconds(song_folder,file_format)
+def saveToFile(genreResult):
+    #if has another id save to file
+    if len(sys.argv) > 2:
+        id = sys.argv[2]
+        if not os.path.exists("results"):
+            os.makedirs("results")
+        f = open('results/'+id+".txt", 'w')
+        f.write(genreResult)
+        f.close()
 
-def extract(song_folder):
-    extract_features(song_folder)
+if not os.path.exists("model_weights/merged_model_weights.hdf5"):
+    print("No model weights found in path 'model_weights/merged_model_weights.hdf5'")
+else:
+    json_string = json.load(open("model_architecture/merged_model_architecture.json","r"))
+    model = model_from_json(json_string)
+    model.load_weights("model_weights/merged_model_weights.hdf5")
+    model.compile(loss='categorical_crossentropy',
+                  optimizer='adam',
+                  metrics=['accuracy']
+                  )
+    # Parse song
+    if len(sys.argv) < 2:
+        print("missing parameter")
+    else:
+        filename = sys.argv[1]
+        song_folder = os.path.dirname(os.path.realpath(filename))#should get the directory to the file
 
-json_string = json.load(open("model_architecture/merged_model_architecture.json","r"))
+        if os.path.isdir(filename):
+            batch_thirty_seconds(song_folder)
+            extract_features(song_folder)
+        else:
+            thirty_seconds(filename)
+            print("File split. Now extracting features.")
+            extract_features(song_folder)
+            print("Extracted features.")
+             
+        keyword_2 = "mfcc_coefficients"
 
-model = model_from_json(json_string)
-model.load_weights("model_weights/merged_model_weights.hdf5")
-model.compile(loss='categorical_crossentropy',
-              optimizer='adam',
-              metrics=['accuracy']
-              )
-# Parse song
-song_name_without_ending = "dataset/query/song_1/song_1"
-file_format = "mp3"
-song_folder = "dataset/query/song_1"
+        x2 = []
+        for root, dirs, files in os.walk(song_folder, topdown=False):
+            for name in files:
+                if re.search(keyword_2+".csv",name):
+                    song_path = (os.path.join(root,name))
 
-process(song_name_without_ending,song_folder,file_format)
-extract(song_folder)
+                    song_features = genfromtxt(song_path, delimiter=",")
 
-keyword_2 = "mfcc_coefficients"
+                    if len(song_features.shape) is 2:
+                        song_features = np.array([ _line[1:] for _line in song_features])
+                    elif len(song_features.shape) is 1:
+                        song_features = np.array([song_features[1:]])
 
-X_2 = []
-for root, dirs, files in os.walk(song_folder, topdown=False):
-    for name in files:
-        if re.search("{0}.csv".format(keyword_2),name):
-            song_path = (os.path.join(root,name))
-            print(song_path)
+                    x2.append(song_features)
 
-            song_features = genfromtxt(song_path, delimiter=",")
+        mfcc_max_len = 0
 
-            if len(song_features.shape) is 2:
-                song_features = np.array([ _line[1:] for _line in song_features])
-            elif len(song_features.shape) is 1:
-                song_features = np.array([song_features[1:]])
+        with( open("maxlen_mfcc_coefficients","r") ) as _f:
+            mfcc_max_len = int(_f.read())
 
-            X_2.append(song_features)
+        x2 = sequence.pad_sequences(x2, maxlen=mfcc_max_len,dtype='float32')
 
-mfcc_max_len = 0
+        keyword_3 = "spectral-contrast_peaks"
+        x3 = []
+        for root, dirs, files in os.walk(song_folder, topdown=False):
+            for name in files:
+                if re.search(keyword_3+".csv",name):
+                    song_path = (os.path.join(root,name))
+                    song_features = genfromtxt(song_path, delimiter=",")
 
-with( open("maxlen_mfcc_coefficients","r") ) as _f:
-    mfcc_max_len = int(_f.read())
+                    if len(song_features.shape) is 2:
+                        song_features = np.array([ _line[1:] for _line in song_features])
+                    elif len(song_features.shape) is 1:
+                        song_features = np.array([song_features[1:]])
 
-X_2 = sequence.pad_sequences(X_2, maxlen=mfcc_max_len,dtype='float32')
+                    x3.append(song_features)
 
-keyword_3 = "spectral-contrast_peaks"
-X_3 = []
-for root, dirs, files in os.walk(song_folder, topdown=False):
-    for name in files:
-        if re.search("{0}.csv".format(keyword_3),name):
-            song_path = (os.path.join(root,name))
-            print(song_path)
-            song_features = genfromtxt(song_path, delimiter=",")
+        spectral_max_len = 0
+        with( open("maxlen_spectral-contrast_peaks","r") ) as _f:
+            spectral_max_len = int(_f.read())
 
-            if len(song_features.shape) is 2:
-                song_features = np.array([ _line[1:] for _line in song_features])
-            elif len(song_features.shape) is 1:
-                song_features = np.array([song_features[1:]])
+        x3 = sequence.pad_sequences(x3, maxlen=spectral_max_len,dtype='float32')
 
-            X_3.append(song_features)
+        predictions = model.predict_classes([x2,x3])
+        genredict = ["genre1","genre2", "genre3"]
+        resultstring = ""
+        for p in predictions:
+            resultstring += genredict[p]+" "
+        print(resultstring)
+        
+        saveToFile(resultstring)
 
-spectral_max_len = 0
-with( open("maxlen_spectral-contrast_peaks","r") ) as _f:
-    spectral_max_len = int(_f.read())
-
-X_3 = sequence.pad_sequences(X_3, maxlen=spectral_max_len,dtype='float32')
-
-# print(len(X_2))
-# print(len(X_3))
-
-predictions = model.predict_classes([X_2,X_3])
-print(predictions)
