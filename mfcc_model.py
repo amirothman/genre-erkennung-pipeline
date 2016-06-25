@@ -10,6 +10,7 @@ import matplotlib.pyplot as plt
 import pickle
 import json
 
+numGenres=3
 def mfcc_model(input_shape):
 
     nb_filter = 100
@@ -68,7 +69,7 @@ def mfcc_model(input_shape):
     # model.add(Flatten())
     # model.add(LSTM(lstm_output_size))
     model.add(Dropout(0.4))
-    model.add(Dense(10))
+    model.add(Dense(numGenres))
     model.add(Dropout(0.2))
     #
     # model.add(Convolution1D(
@@ -109,7 +110,7 @@ if __name__=="__main__":
     y_test = pickle.load(open("pickled_vectors/mfcc_coefficients_evaluation_label.pickle","rb"))
 
     model = mfcc_model((X.shape[1],X.shape[2]))
-    model.add(Dense(2))
+    model.add(Dense(numGenres))
     model.add(Activation('softmax'))
     model.compile(loss='categorical_crossentropy',
                   optimizer='adam',
