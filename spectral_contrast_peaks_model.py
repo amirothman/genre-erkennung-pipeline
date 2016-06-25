@@ -163,6 +163,9 @@ if __name__=="__main__":
     # # with open("experimental_results.json","w") as f:
     # #     f.write(json.dumps(history.history, sort_keys=True,indent=4, separators=(',', ': ')))
     #
+    if not os.path.exists("model_weights"):
+        os.makedirs("model_weights")
+    model.save_weights("model_weights/spectral_contrast_peaks_model_weights.hdf5",overwrite=True)    
     for k,v in history.history.items():
         # print(k,v)
         _keys = list(history.history.keys())
