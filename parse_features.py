@@ -93,10 +93,8 @@ if __name__=="__main__":
         path=sys.argv[1]
         if not os.path.exists("pickled_vectors"):
             os.makedirs("pickled_vectors")
-        build_vectors(folder_path=path,keyword="spectral-contrast_peaks",lower_limit=1)
-        build_vectors(folder_path=path,keyword="mfcc_coefficients",lower_limit=1)
+        build_vectors(folder_path=path,keyword="spectral-contrast_peaks")
+        build_vectors(folder_path=path,keyword="mfcc_coefficients")
         # build_vectors(keyword="tempotracker_tempo",upper_limit=-1)
         #create_dataset("dataset/my_dataset",keyword="spectral-contrast_peaks",lower_limit=1)
         #create_dataset("dataset/my_dataset",keyword="mfcc_coefficients",lower_limit=1)
-    
-    

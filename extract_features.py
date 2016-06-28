@@ -5,22 +5,16 @@ import sys
 from split_30_seconds import iterate_audio
 import os
 
-audio_features = [
-                    #   "vamp:qm-vamp-plugins:qm-tempotracker:tempo",
-                      "vamp:qm-vamp-plugins:qm-mfcc:coefficients",
-                      "vamp:bbc-vamp-plugins:bbc-spectral-contrast:peaks",
-                      ]
-                      
-def extract_features(path="."):
+def extract_features(path=".",audio_features=["vamp:qm-vamp-plugins:qm-mfcc:coefficients"]):
     for feature in audio_features:
-        cmd = "sonic-annotator -d {0} {1} -r -w csv --csv-force".format(feature,path)
+        cmd = "sonic-annotator -d {0} {1} -r -w csv".format(feature,path)
         subprocess.call(cmd.split())
         #p = Popen(cmd.split(), stdin=PIPE, stdout=PIPE, stderr=PIPE)
         #output, err = p.communicate()
 
-def extract_features_single(path="."):
+def extract_features_single(path=".",audio_features=["vamp:qm-vamp-plugins:qm-mfcc:coefficients"]):
     for feature in audio_features:
-        cmd = "sonic-annotator -d {0} {1} -w csv --csv-force".format(feature,path)
+        cmd = "sonic-annotator -d {0} {1} -w csv".format(feature,path)
         subprocess.call(cmd.split())
 
 if __name__=="__main__":
@@ -32,14 +26,19 @@ if __name__=="__main__":
     # extract_features("dataset/train/pop")
 
     # extract_features("dataset/train")
+    _features = [
+                        #   "vamp:qm-vamp-plugins:qm-tempotracker:tempo",
+                          "vamp:qm-vamp-plugins:qm-mfcc:coefficients",
+                          "vamp:bbc-vamp-plugins:bbc-spectral-contrast:peaks",
+                          ]
     if len(sys.argv) < 2:
         print("missing parameter for dataset or file path")
     else:
         if os.path.isdir(sys.argv[1]):
-            for file in iterate_audio(path=sys.argv[1]):
-                print("extracing" + file)
-                extract_features_single(file)
+            for _file in iterate_audio(path=sys.argv[1]):
+                print("extracing" + _file)
+                extract_features_single(_file,_features)
         else:
-            extract_features_single(sys.argv[1])
-    
+            extract_features_single(sys.argv[1],_features)
+
     #extract features for single file

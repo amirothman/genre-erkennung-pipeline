@@ -9,7 +9,7 @@ def iterate_audio(path="."):
     for root, dirs, files in os.walk(path, topdown=False):
         for name in files:
             print(name)
-            if re.search(".mp3",name):
+            if re.search(".mp3$",name):
                 print(name+"found")
                 song_path = (os.path.join(root,name))
                 yield song_path
@@ -44,7 +44,7 @@ def batch_thirty_seconds(folder_path):
     print("batch thirty_seconds")
     for song_path in iterate_audio(folder_path):
         thirty_seconds(song_path)
-        
+
 #for every file in folder makes files mono
 def batch_mono(folder_path):
     print("batch mono")
