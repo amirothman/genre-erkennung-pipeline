@@ -93,11 +93,24 @@ else:
         x3 = sequence.pad_sequences(x3, maxlen=spectral_max_len,dtype='float32')
 
         predictions = model.predict_classes([x2,x3])
-        genredict = ["genre1","genre2", "genre3"]
+        genredict = ["hiphop","pop", "rock"]
+        genredict.sort()#make sure that it is alphabetically sorted
+        
+        #make a list of result strings
+        resultsstringified = []
+        for p in predictions:#p is digit
+            resultsstringified.append(genredict[p])
+            
+        mode = max(set(resultsstringified), key=resultsstringified.count);
+        
         resultstring = ""
-        for p in predictions:
-            resultstring += genredict[p]+" "
-        print(resultstring)
+        for p in resultsstringified:
+            if mode==p:
+                modeCounter+=1
+            resultstring += p+" "
+            
+        print("Detected "+resultstring)  
+        print("The song is "+str(modeCounter*100/resultsstringified.count)+" % "+mode)
         
         saveToFile(resultstring)
 
