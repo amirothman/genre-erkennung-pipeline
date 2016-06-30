@@ -3,12 +3,20 @@ import numpy as np
 np.random.seed(1337)  # for reproducibility
 import pickle
 
-
 if __name__=="__main__":
-    X = pickle.load(open("pickled_vectors/3_generes_spectral-contrast_peaks_training_vector.pickle","rb"))
+
+    X_1 = pickle.load(open("pickled_vectors/3_generes_spectral-contrast_peaks_training_vector.pickle","rb"))
+
+    X_2 = pickle.load(open("pickled_vectors/3_generes_spectral-contrast_valleys_training_vector.pickle","rb"))
+
+    X = np.subtract(X_1,X_2)
     y = pickle.load(open("pickled_vectors/3_generes_spectral-contrast_peaks_label.pickle","rb"))
 
-    X_test = pickle.load(open("pickled_vectors/3_generes_spectral-contrast_peaks_evaluation_training_vector.pickle","rb"))
+    X_1_test = pickle.load(open("pickled_vectors/3_generes_spectral-contrast_peaks_evaluation_training_vector.pickle","rb"))
+
+    X_2_test = pickle.load(open("pickled_vectors/3_generes_spectral-contrast_valleys_evaluation_training_vector.pickle","rb"))
+
+    X_test = np.subtract(X_1_test,X_2_test)
 
     y_test = pickle.load(open("pickled_vectors/3_generes_spectral-contrast_peaks_evaluation_label.pickle","rb"))
 
@@ -31,5 +39,5 @@ if __name__=="__main__":
                            y,y_test,
                            nb_epoch,batch_size,
                            params = params,
-                           results_file="spectral_contrast_peaks_results_1dcnn_lstm_3_generes.csv",
+                           results_file="spectral_contrast_results_1dcnn_lstm_3_generes.csv",
                            inner_loop=1)

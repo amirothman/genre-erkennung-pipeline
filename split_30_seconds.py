@@ -8,9 +8,9 @@ import sys
 def iterate_audio(path="."):
     for root, dirs, files in os.walk(path, topdown=False):
         for name in files:
-            print(name)
+            # print(name)
             if re.search(".mp3$",name):
-                print(name+"found")
+                # print(name+"found")
                 song_path = (os.path.join(root,name))
                 yield song_path
 
@@ -31,6 +31,14 @@ def thirty_seconds(filepath):
 
     ffmpeg -i in.mp3 -f segment -segment_time 30 -c copy out%03d.mp3"""
     split_commando = "ffmpeg -i {0}{1} -f segment -segment_time 30 -c copy {0}-%03d{1}"
+    ffmpeg_process(filepath,split_commando)
+
+def ten_seconds(filepath):
+    """
+    split audio to 30 seconds each.
+
+    ffmpeg -i in.mp3 -f segment -segment_time 30 -c copy out%03d.mp3"""
+    split_commando = "ffmpeg -i {0}{1} -f segment -segment_time 10 -c copy {0}-%03d{1}"
     ffmpeg_process(filepath,split_commando)
 
 def to_mono(filepath):

@@ -50,9 +50,13 @@ def create_dataset(dataset_path, keyword=None, lower_limit=None, upper_limit=Non
                     song_features = np.array([ _line[lower_limit:upper_limit] for _line in song_features])
                 elif len(song_features.shape) is 1:
                     song_features = np.array([song_features[lower_limit:upper_limit]])
-                training_vector.append(song_features)
 
-                labels.append(encode_label(genres,song_path,verbose=verbose))
+                if song_features.shape[1] == 0:
+                    print("song_features.shape = (x,0)")
+                else:
+                    # print(song_features.shape)
+                    training_vector.append(song_features)
+                    labels.append(encode_label(genres,song_path,verbose=verbose))
                 # print(encode_label(genres,song_path))
 
     if categorical:
@@ -61,7 +65,31 @@ def create_dataset(dataset_path, keyword=None, lower_limit=None, upper_limit=Non
     maxlen = np.max([len(vector) for vector in training_vector])
     return training_vector,labels,maxlen
 
+def get_vector(dataset_path, keyword=None, lower_limit=None, upper_limit=None, verbose=True, categorical=True):
+    training_vector = []
+    for root, dirs, files in os.walk(dataset_path, topdown=False):
+        for name in files:
+            if re.search("{0}.csv".format(keyword),name):
+                song_path = (os.path.join(root,name))
+                if verbose:
+                    print(song_path)
+
+                song_features = genfromtxt(song_path, delimiter=",")
+
+                if len(song_features.shape) is 2:
+                    song_features = np.array([ _line[lower_limit:upper_limit] for _line in song_features])
+                elif len(song_features.shape) is 1:
+                    song_features = np.array([song_features[lower_limit:upper_limit]])
+
+                if song_features.shape[1] == 0:
+                    print("song_features.shape = (x,0)")
+                else:
+                    # print(song_features.shape)
+                    training_vector.append(song_features)
+    return training_vector
+
 def build_vectors(keyword="",data_label="",lower_limit=None,upper_limit=None,folder_path="dataset"):
+
     # training
     training_vector,labels,maxlen_training = create_dataset(dataset_path = folder_path+"/train",keyword=keyword,lower_limit=lower_limit,upper_limit=upper_limit)
 

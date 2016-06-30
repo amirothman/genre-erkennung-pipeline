@@ -5,12 +5,12 @@ import pickle
 
 
 if __name__=="__main__":
-    X = pickle.load(open("pickled_vectors/3_generes_spectral-contrast_peaks_training_vector.pickle","rb"))
-    y = pickle.load(open("pickled_vectors/3_generes_spectral-contrast_peaks_label.pickle","rb"))
+    X = pickle.load(open("pickled_vectors/3_generes_spectral-contrast_valleys_training_vector.pickle","rb"))
+    y = pickle.load(open("pickled_vectors/3_generes_spectral-contrast_valleys_label.pickle","rb"))
 
-    X_test = pickle.load(open("pickled_vectors/3_generes_spectral-contrast_peaks_evaluation_training_vector.pickle","rb"))
+    X_test = pickle.load(open("pickled_vectors/3_generes_spectral-contrast_valleys_evaluation_training_vector.pickle","rb"))
 
-    y_test = pickle.load(open("pickled_vectors/3_generes_spectral-contrast_peaks_evaluation_label.pickle","rb"))
+    y_test = pickle.load(open("pickled_vectors/3_generes_spectral-contrast_valleys_evaluation_label.pickle","rb"))
 
 
     # print(read_calculated_hyperparameters())
@@ -31,5 +31,5 @@ if __name__=="__main__":
                            y,y_test,
                            nb_epoch,batch_size,
                            params = params,
-                           results_file="spectral_contrast_peaks_results_1dcnn_lstm_3_generes.csv",
+                           results_file="spectral_contrast_valleys_results_1dcnn_lstm_3_generes.csv",
                            inner_loop=1)

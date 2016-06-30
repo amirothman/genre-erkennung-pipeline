@@ -1,0 +1,716 @@
+# no good
+dataset/3_genres/train/hiphop/Get_Loose.mp3-out004_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Gangsta_shit..mp3-out008_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Gingerbread_Man.mp3-out008_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Geak_Show.mp3-out009_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Gangsta_shit.mp3-out003_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Fmj.mp3-out001_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Fuck_A_Hoe.mp3-out002_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Gettin_2_It.mp3-out013_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Gangsta_shit..mp3-out025_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Fiyayaya_Weed.mp3-out016_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Gangsta_shit..mp3-out019_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Gangsta.mp3-out003_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Gangsta.mp3-out011_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Fight__crunk_remix_.mp3-out004_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Feeling_Good.mp3-out025_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Feeling_Good.mp3-out023_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/GBSB.mp3-out014_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Get_high_to_this.mp3-out013_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Gangsta's_Paradise.mp3-out019_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Gingerbread_Man.mp3-out018_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Get_Loose.mp3-out010_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Fmj.mp3-out004_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Fight__crunk_remix_.mp3-out014_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Fie_It_Up.mp3-out006_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Fie_It_Up.mp3-out008_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Gangsta's_Paradise.mp3-out001_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Get_gone.mp3-out002_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Fuck_nigga.mp3-out009_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Get_high_to_this.mp3-out000_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Fight_Knight.mp3-out017_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Get_high_to_this.mp3-out030_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Fish_Scale.mp3-out026_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Get_gone.mp3-out001_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Gingerbread_Man.mp3-out000_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/hiphop/Fresh_Like_Me.mp3-out013_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/046._Dillon_Francis_Feat._The_Presets_-_We_Are_Impossible.mp3-out013_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/079._Chuckie___Diamond_Pistols_Feat_Hyper_Crush_-_Bang.mp3-out024_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/022._Таня_Дяченко_-_Пять_Минут_Счастья.mp3-out003_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/041._Рэй_-_Солнце.mp3-out003_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/017._Eros_Ramazzotti_-_Perfetto.mp3-out001_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/020._Soprano_Турецкого_И_Александр_Ревва_-_На_Лету_Лето.mp3-out010_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/055._Ева_Польна_-_Мало.mp3-out004_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/066._Dj_Jedy_Feat._Olesya_May_-_Романс.mp3-out000_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/049._Галамартовна_-_Гуляй,_Страна!.mp3-out019_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/023._Tommy_Trash_Feat._Jhart_-_Wake_The_Giant.mp3-out003_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/015._Глюкоза_-_Согрей.mp3-out011_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/035._Плед_-_Настроение.mp3-out003_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/066._Dj_Jedy_Feat._Olesya_May_-_Романс.mp3-out012_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/025._Виталий_Чирва_-_Как_Же_Я_Люблю_Тебя.mp3-out012_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/045._Jessie_J_Feat._De_La_Soul_-_Seal_Me_With_A_Kiss.mp3-out019_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/060._EYA_-_Вспоминай.mp3-out007_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/061._Nico___Vinz_-_Miracles.mp3-out012_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/031._Fall_Out_Boy_-_Immortals.mp3-out004_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/020._Soprano_Турецкого_И_Александр_Ревва_-_На_Лету_Лето.mp3-out012_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/055._Ева_Польна_-_Мало.mp3-out018_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/022._Таня_Дяченко_-_Пять_Минут_Счастья.mp3-out021_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/010._Ольга_Василюк_-_Нет_Тебя.mp3-out014_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/070._Lewis_Player_Feat._Dan_Nash___Mikea_-_Mercury.mp3-out017_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/068._Mirra_-_Всерьез.mp3-out010_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/008._Марина_Алиева_-_Подари_Любовь.mp3-out011_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/043._Dnce_-_Cake_By_The_Ocean.mp3-out009_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/046._Dillon_Francis_Feat._The_Presets_-_We_Are_Impossible.mp3-out003_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/053._Валенсия___Абдулла_-_Одинокий_Тополь.mp3-out016_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/047._Real_O_-_Снежинка.mp3-out006_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/079._Chuckie___Diamond_Pistols_Feat_Hyper_Crush_-_Bang.mp3-out005_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/100._Согдиана_и_Авраам_Руссо_-_Нет_Невозможного.mp3-out002_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/015._Глюкоза_-_Согрей.mp3-out001_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/018._T.I._Feat._Pharrell_-_Oh_Yeah.mp3-out008_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/074._David_Guetta_Feat._John_Legend_-_Listen.mp3-out009_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/085._Fifth_Harmony_-_Sledgehammer.mp3-out020_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/004._Prides_-_Out_Of_The_Blue.mp3-out005_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/092._L'one_Feat._Тимати_-_Я_Помню.mp3-out008_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/069._РЭЙ_feat._Tonystar_-_La_La_La__U_Wanna_.mp3-out005_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/063._Iowa_-_Бьет_Бит.mp3-out003_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/010._Ольга_Василюк_-_Нет_Тебя.mp3-out020_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/017._Eros_Ramazzotti_-_Perfetto.mp3-out009_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/050._Gorgon_City_Feat._Katy_B_-_Lover_Like_You.mp3-out020_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/020._Soprano_Турецкого_И_Александр_Ревва_-_На_Лету_Лето.mp3-out013_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/029._Heartskin_-_Пароль_03.mp3-out001_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/041._Рэй_-_Солнце.mp3-out019_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/033._Elton_John_-_Blue_Wonderful.mp3-out011_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/025._Виталий_Чирва_-_Как_Же_Я_Люблю_Тебя.mp3-out004_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/002._Zedd,_Bahari_-_Addicted_To_A_Memory.mp3-out026_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/074._David_Guetta_Feat._John_Legend_-_Listen.mp3-out004_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/057._Ёлка_-_Пара.mp3-out016_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/035._Плед_-_Настроение.mp3-out005_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/031._Fall_Out_Boy_-_Immortals.mp3-out000_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/073._Jandro_-_Как_Мне_Тебя_Разлюбить.mp3-out015_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/037._Maroon_5_-_Sugar.mp3-out010_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/047._Real_O_-_Снежинка.mp3-out004_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/012._Даша_Суворова_-_Киты.mp3-out008_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/012._Даша_Суворова_-_Киты.mp3-out013_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/008._Марина_Алиева_-_Подари_Любовь.mp3-out008_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/025._Виталий_Чирва_-_Как_Же_Я_Люблю_Тебя.mp3-out007_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/004._Prides_-_Out_Of_The_Blue.mp3-out007_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/050._Gorgon_City_Feat._Katy_B_-_Lover_Like_You.mp3-out001_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/005._Holly_Molly_-_For_Ma_Ma.mp3-out004_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/097._Элина_Чага_-_Мечта__2015_.mp3-out001_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/022._Таня_Дяченко_-_Пять_Минут_Счастья.mp3-out022_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/040._Ellie_Goulding_-_Keep_On_Dancin.mp3-out014_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/035._Плед_-_Настроение.mp3-out012_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/091._The_Hardkiss_-_Tony,_Talk!__DJ_Ekspert_Remix_.mp3-out013_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/068._Mirra_-_Всерьез.mp3-out005_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/041._Рэй_-_Солнце.mp3-out008_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/059._Sasha_Holiday_-_Chameleon.mp3-out014_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/038._Лавика_-_Body_Cries.mp3-out012_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/066._Dj_Jedy_Feat._Olesya_May_-_Романс.mp3-out005_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/070._Lewis_Player_Feat._Dan_Nash___Mikea_-_Mercury.mp3-out001_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/050._Gorgon_City_Feat._Katy_B_-_Lover_Like_You.mp3-out016_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/078._Charles_Monroe_-_Innocent_Girl.mp3-out001_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/016._Вика_Воронина_Feat._Storm_Djs_-_Угги.mp3-out003_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/074._David_Guetta_Feat._John_Legend_-_Listen.mp3-out017_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/073._Jandro_-_Как_Мне_Тебя_Разлюбить.mp3-out011_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/025._Виталий_Чирва_-_Как_Же_Я_Люблю_Тебя.mp3-out020_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/017._Eros_Ramazzotti_-_Perfetto.mp3-out016_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/010._Ольга_Василюк_-_Нет_Тебя.mp3-out023_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/084._Юлианна_Караулова_-_Внеорбитные.mp3-out003_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/015._Глюкоза_-_Согрей.mp3-out002_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/073._Jandro_-_Как_Мне_Тебя_Разлюбить.mp3-out008_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/053._Валенсия___Абдулла_-_Одинокий_Тополь.mp3-out003_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/077._Николай_Тимофеев_-_Теплоход.mp3-out000_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/064._Emin_-_Ты.mp3-out022_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/094._Поющие_Трусы_-_Падруга.mp3-out006_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/059._Sasha_Holiday_-_Chameleon.mp3-out020_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/028._Алена_Ланская_-_Я_Жива.mp3-out006_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/084._Юлианна_Караулова_-_Внеорбитные.mp3-out010_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/002._Zedd,_Bahari_-_Addicted_To_A_Memory.mp3-out015_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/018._T.I._Feat._Pharrell_-_Oh_Yeah.mp3-out005_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/076._Simple_Plan_-_Opinion_Overload.mp3-out003_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/091._The_Hardkiss_-_Tony,_Talk!__DJ_Ekspert_Remix_.mp3-out009_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/005._Holly_Molly_-_For_Ma_Ma.mp3-out025_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/097._Элина_Чага_-_Мечта__2015_.mp3-out019_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/006._Chris_Brown_-_Don't_Be_Gone_Too_Long.mp3-out006_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/008._Марина_Алиева_-_Подари_Любовь.mp3-out013_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/020._Soprano_Турецкого_И_Александр_Ревва_-_На_Лету_Лето.mp3-out006_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/016._Вика_Воронина_Feat._Storm_Djs_-_Угги.mp3-out013_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/075._Jackie_Boyz_-_Fistful_Of_Diamonds.mp3-out008_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/088._Iowa_-_Три_дня_холода__Original_mix_.mp3-out013_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/015._Глюкоза_-_Согрей.mp3-out000_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/043._Dnce_-_Cake_By_The_Ocean.mp3-out019_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/062._Олеся_Астапова___Jahroom_-_Ты.mp3-out000_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/099._Полина_Смолова_-_Где-то_Там.mp3-out017_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/042._Aisha_-_Поцелуи.mp3-out005_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/006._Chris_Brown_-_Don't_Be_Gone_Too_Long.mp3-out009_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/048._Turbotronic_-_Booty_Shake__Original_Mix_.mp3-out019_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/076._Simple_Plan_-_Opinion_Overload.mp3-out018_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/070._Lewis_Player_Feat._Dan_Nash___Mikea_-_Mercury.mp3-out004_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/092._L'one_Feat._Тимати_-_Я_Помню.mp3-out011_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/098._The_Chasers_-_Second_Heart.mp3-out013_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/008._Марина_Алиева_-_Подари_Любовь.mp3-out005_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/096._Rihanna_-_Kiss_It_Better.mp3-out000_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/042._Aisha_-_Поцелуи.mp3-out016_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/018._T.I._Feat._Pharrell_-_Oh_Yeah.mp3-out017_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/088._Iowa_-_Три_дня_холода__Original_mix_.mp3-out021_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/098._The_Chasers_-_Second_Heart.mp3-out012_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/031._Fall_Out_Boy_-_Immortals.mp3-out013_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/050._Gorgon_City_Feat._Katy_B_-_Lover_Like_You.mp3-out002_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/007._Danya_-_Никому___Никогда.mp3-out018_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/046._Dillon_Francis_Feat._The_Presets_-_We_Are_Impossible.mp3-out006_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/070._Lewis_Player_Feat._Dan_Nash___Mikea_-_Mercury.mp3-out015_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/045._Jessie_J_Feat._De_La_Soul_-_Seal_Me_With_A_Kiss.mp3-out015_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/050._Gorgon_City_Feat._Katy_B_-_Lover_Like_You.mp3-out012_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/019._Варя_Демидова_и_Михаил_Шуфутинский_-_Снег.mp3-out002_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/078._Charles_Monroe_-_Innocent_Girl.mp3-out016_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/035._Плед_-_Настроение.mp3-out010_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/098._The_Chasers_-_Second_Heart.mp3-out003_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/045._Jessie_J_Feat._De_La_Soul_-_Seal_Me_With_A_Kiss.mp3-out020_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/043._Dnce_-_Cake_By_The_Ocean.mp3-out012_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/013._Iggy_Azalea_Feat._Ellie_Goulding_-_Heavy_Crown.mp3-out002_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/002._Zedd,_Bahari_-_Addicted_To_A_Memory.mp3-out012_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/037._Maroon_5_-_Sugar.mp3-out019_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/061._Nico___Vinz_-_Miracles.mp3-out004_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/085._Fifth_Harmony_-_Sledgehammer.mp3-out001_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/040._Ellie_Goulding_-_Keep_On_Dancin.mp3-out009_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/038._Лавика_-_Body_Cries.mp3-out015_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/099._Полина_Смолова_-_Где-то_Там.mp3-out001_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/050._Gorgon_City_Feat._Katy_B_-_Lover_Like_You.mp3-out004_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/038._Лавика_-_Body_Cries.mp3-out016_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/016._Вика_Воронина_Feat._Storm_Djs_-_Угги.mp3-out017_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/028._Алена_Ланская_-_Я_Жива.mp3-out008_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/064._Emin_-_Ты.mp3-out002_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/081._Drew_Scott_-_Playa_Role.mp3-out014_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/062._Олеся_Астапова___Jahroom_-_Ты.mp3-out005_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/033._Elton_John_-_Blue_Wonderful.mp3-out012_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/060._EYA_-_Вспоминай.mp3-out002_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/053._Валенсия___Абдулла_-_Одинокий_Тополь.mp3-out018_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/079._Chuckie___Diamond_Pistols_Feat_Hyper_Crush_-_Bang.mp3-out018_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/035._Плед_-_Настроение.mp3-out009_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/015._Глюкоза_-_Согрей.mp3-out005_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/079._Chuckie___Diamond_Pistols_Feat_Hyper_Crush_-_Bang.mp3-out021_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/096._Rihanna_-_Kiss_It_Better.mp3-out019_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/016._Вика_Воронина_Feat._Storm_Djs_-_Угги.mp3-out012_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/048._Turbotronic_-_Booty_Shake__Original_Mix_.mp3-out023_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/048._Turbotronic_-_Booty_Shake__Original_Mix_.mp3-out016_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/002._Zedd,_Bahari_-_Addicted_To_A_Memory.mp3-out010_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/063._Iowa_-_Бьет_Бит.mp3-out012_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/016._Вика_Воронина_Feat._Storm_Djs_-_Угги.mp3-out000_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/066._Dj_Jedy_Feat._Olesya_May_-_Романс.mp3-out008_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/098._The_Chasers_-_Second_Heart.mp3-out004_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/018._T.I._Feat._Pharrell_-_Oh_Yeah.mp3-out001_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/048._Turbotronic_-_Booty_Shake__Original_Mix_.mp3-out004_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/008._Марина_Алиева_-_Подари_Любовь.mp3-out006_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/075._Jackie_Boyz_-_Fistful_Of_Diamonds.mp3-out010_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/061._Nico___Vinz_-_Miracles.mp3-out009_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/057._Ёлка_-_Пара.mp3-out011_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/038._Лавика_-_Body_Cries.mp3-out008_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/056._D.I.P_Project_Feat._Selecta_-_Я_Люблю.mp3-out011_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/013._Iggy_Azalea_Feat._Ellie_Goulding_-_Heavy_Crown.mp3-out003_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/064._Emin_-_Ты.mp3-out009_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/076._Simple_Plan_-_Opinion_Overload.mp3-out017_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/099._Полина_Смолова_-_Где-то_Там.mp3-out010_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/002._Zedd,_Bahari_-_Addicted_To_A_Memory.mp3-out024_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/017._Eros_Ramazzotti_-_Perfetto.mp3-out007_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/024._Мила_Нитич_-_Верни_Мою_Любовь.mp3-out009_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/028._Алена_Ланская_-_Я_Жива.mp3-out002_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/013._Iggy_Azalea_Feat._Ellie_Goulding_-_Heavy_Crown.mp3-out014_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/035._Плед_-_Настроение.mp3-out004_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/097._Элина_Чага_-_Мечта__2015_.mp3-out003_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/029._Heartskin_-_Пароль_03.mp3-out005_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/015._Глюкоза_-_Согрей.mp3-out012_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/064._Emin_-_Ты.mp3-out014_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/068._Mirra_-_Всерьез.mp3-out012_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/008._Марина_Алиева_-_Подари_Любовь.mp3-out000_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/061._Nico___Vinz_-_Miracles.mp3-out000_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/079._Chuckie___Diamond_Pistols_Feat_Hyper_Crush_-_Bang.mp3-out000_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/073._Jandro_-_Как_Мне_Тебя_Разлюбить.mp3-out018_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/099._Полина_Смолова_-_Где-то_Там.mp3-out018_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/042._Aisha_-_Поцелуи.mp3-out011_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/018._T.I._Feat._Pharrell_-_Oh_Yeah.mp3-out011_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/016._Вика_Воронина_Feat._Storm_Djs_-_Угги.mp3-out016_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/047._Real_O_-_Снежинка.mp3-out001_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/002._Zedd,_Bahari_-_Addicted_To_A_Memory.mp3-out004_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/042._Aisha_-_Поцелуи.mp3-out006_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/060._EYA_-_Вспоминай.mp3-out016_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/077._Николай_Тимофеев_-_Теплоход.mp3-out011_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/061._Nico___Vinz_-_Miracles.mp3-out010_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/008._Марина_Алиева_-_Подари_Любовь.mp3-out010_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/078._Charles_Monroe_-_Innocent_Girl.mp3-out004_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/005._Holly_Molly_-_For_Ma_Ma.mp3-out018_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/100._Согдиана_и_Авраам_Руссо_-_Нет_Невозможного.mp3-out015_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/053._Валенсия___Абдулла_-_Одинокий_Тополь.mp3-out019_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/091._The_Hardkiss_-_Tony,_Talk!__DJ_Ekspert_Remix_.mp3-out007_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/038._Лавика_-_Body_Cries.mp3-out011_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/077._Николай_Тимофеев_-_Теплоход.mp3-out013_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/100._Согдиана_и_Авраам_Руссо_-_Нет_Невозможного.mp3-out016_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/091._The_Hardkiss_-_Tony,_Talk!__DJ_Ekspert_Remix_.mp3-out011_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/033._Elton_John_-_Blue_Wonderful.mp3-out013_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/084._Юлианна_Караулова_-_Внеорбитные.mp3-out016_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/094._Поющие_Трусы_-_Падруга.mp3-out018_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/047._Real_O_-_Снежинка.mp3-out009_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/025._Виталий_Чирва_-_Как_Же_Я_Люблю_Тебя.mp3-out011_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/019._Варя_Демидова_и_Михаил_Шуфутинский_-_Снег.mp3-out008_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/092._L'one_Feat._Тимати_-_Я_Помню.mp3-out012_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/023._Tommy_Trash_Feat._Jhart_-_Wake_The_Giant.mp3-out009_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/088._Iowa_-_Три_дня_холода__Original_mix_.mp3-out018_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/022._Таня_Дяченко_-_Пять_Минут_Счастья.mp3-out016_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/007._Danya_-_Никому___Никогда.mp3-out006_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/094._Поющие_Трусы_-_Падруга.mp3-out012_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/075._Jackie_Boyz_-_Fistful_Of_Diamonds.mp3-out013_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/010._Ольга_Василюк_-_Нет_Тебя.mp3-out007_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/029._Heartskin_-_Пароль_03.mp3-out000_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/060._EYA_-_Вспоминай.mp3-out008_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/016._Вика_Воронина_Feat._Storm_Djs_-_Угги.mp3-out007_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/092._L'one_Feat._Тимати_-_Я_Помню.mp3-out010_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/063._Iowa_-_Бьет_Бит.mp3-out001_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/073._Jandro_-_Как_Мне_Тебя_Разлюбить.mp3-out002_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/037._Maroon_5_-_Sugar.mp3-out023_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/023._Tommy_Trash_Feat._Jhart_-_Wake_The_Giant.mp3-out001_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/017._Eros_Ramazzotti_-_Perfetto.mp3-out023_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/098._The_Chasers_-_Second_Heart.mp3-out019_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/029._Heartskin_-_Пароль_03.mp3-out009_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/035._Плед_-_Настроение.mp3-out018_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/022._Таня_Дяченко_-_Пять_Минут_Счастья.mp3-out009_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/076._Simple_Plan_-_Opinion_Overload.mp3-out006_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/012._Даша_Суворова_-_Киты.mp3-out010_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/059._Sasha_Holiday_-_Chameleon.mp3-out018_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/024._Мила_Нитич_-_Верни_Мою_Любовь.mp3-out020_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/075._Jackie_Boyz_-_Fistful_Of_Diamonds.mp3-out014_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/074._David_Guetta_Feat._John_Legend_-_Listen.mp3-out002_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/074._David_Guetta_Feat._John_Legend_-_Listen.mp3-out022_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/043._Dnce_-_Cake_By_The_Ocean.mp3-out017_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/081._Drew_Scott_-_Playa_Role.mp3-out000_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/010._Ольга_Василюк_-_Нет_Тебя.mp3-out017_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/097._Элина_Чага_-_Мечта__2015_.mp3-out022_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/042._Aisha_-_Поцелуи.mp3-out002_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/100._Согдиана_и_Авраам_Руссо_-_Нет_Невозможного.mp3-out000_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/097._Элина_Чага_-_Мечта__2015_.mp3-out014_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/098._The_Chasers_-_Second_Heart.mp3-out017_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/031._Fall_Out_Boy_-_Immortals.mp3-out011_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/025._Виталий_Чирва_-_Как_Же_Я_Люблю_Тебя.mp3-out015_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/100._Согдиана_и_Авраам_Руссо_-_Нет_Невозможного.mp3-out017_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/046._Dillon_Francis_Feat._The_Presets_-_We_Are_Impossible.mp3-out020_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/005._Holly_Molly_-_For_Ma_Ma.mp3-out002_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/099._Полина_Смолова_-_Где-то_Там.mp3-out013_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/007._Danya_-_Никому___Никогда.mp3-out002_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/066._Dj_Jedy_Feat._Olesya_May_-_Романс.mp3-out021_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/043._Dnce_-_Cake_By_The_Ocean.mp3-out003_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/033._Elton_John_-_Blue_Wonderful.mp3-out014_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/078._Charles_Monroe_-_Innocent_Girl.mp3-out009_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/059._Sasha_Holiday_-_Chameleon.mp3-out019_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/013._Iggy_Azalea_Feat._Ellie_Goulding_-_Heavy_Crown.mp3-out023_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/006._Chris_Brown_-_Don't_Be_Gone_Too_Long.mp3-out012_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/015._Глюкоза_-_Согрей.mp3-out003_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/022._Таня_Дяченко_-_Пять_Минут_Счастья.mp3-out018_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/081._Drew_Scott_-_Playa_Role.mp3-out005_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/041._Рэй_-_Солнце.mp3-out012_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/077._Николай_Тимофеев_-_Теплоход.mp3-out015_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/003._MOYYO_-_Имя_Moyyo.mp3-out012_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/017._Eros_Ramazzotti_-_Perfetto.mp3-out014_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/010._Ольга_Василюк_-_Нет_Тебя.mp3-out019_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/024._Мила_Нитич_-_Верни_Мою_Любовь.mp3-out014_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/047._Real_O_-_Снежинка.mp3-out011_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/078._Charles_Monroe_-_Innocent_Girl.mp3-out005_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/017._Eros_Ramazzotti_-_Perfetto.mp3-out018_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/040._Ellie_Goulding_-_Keep_On_Dancin.mp3-out000_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/061._Nico___Vinz_-_Miracles.mp3-out002_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/078._Charles_Monroe_-_Innocent_Girl.mp3-out006_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/084._Юлианна_Караулова_-_Внеорбитные.mp3-out018_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/010._Ольга_Василюк_-_Нет_Тебя.mp3-out021_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/048._Turbotronic_-_Booty_Shake__Original_Mix_.mp3-out024_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/004._Prides_-_Out_Of_The_Blue.mp3-out008_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/068._Mirra_-_Всерьез.mp3-out003_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/094._Поющие_Трусы_-_Падруга.mp3-out000_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/024._Мила_Нитич_-_Верни_Мою_Любовь.mp3-out001_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/096._Rihanna_-_Kiss_It_Better.mp3-out013_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/091._The_Hardkiss_-_Tony,_Talk!__DJ_Ekspert_Remix_.mp3-out012_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/061._Nico___Vinz_-_Miracles.mp3-out019_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/081._Drew_Scott_-_Playa_Role.mp3-out009_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/062._Олеся_Астапова___Jahroom_-_Ты.mp3-out017_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/077._Николай_Тимофеев_-_Теплоход.mp3-out018_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/045._Jessie_J_Feat._De_La_Soul_-_Seal_Me_With_A_Kiss.mp3-out011_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/050._Gorgon_City_Feat._Katy_B_-_Lover_Like_You.mp3-out003_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/042._Aisha_-_Поцелуи.mp3-out010_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/008._Марина_Алиева_-_Подари_Любовь.mp3-out016_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/006._Chris_Brown_-_Don't_Be_Gone_Too_Long.mp3-out018_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/031._Fall_Out_Boy_-_Immortals.mp3-out009_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/063._Iowa_-_Бьет_Бит.mp3-out006_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/045._Jessie_J_Feat._De_La_Soul_-_Seal_Me_With_A_Kiss.mp3-out009_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/091._The_Hardkiss_-_Tony,_Talk!__DJ_Ekspert_Remix_.mp3-out000_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/019._Варя_Демидова_и_Михаил_Шуфутинский_-_Снег.mp3-out018_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/002._Zedd,_Bahari_-_Addicted_To_A_Memory.mp3-out021_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/046._Dillon_Francis_Feat._The_Presets_-_We_Are_Impossible.mp3-out001_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/085._Fifth_Harmony_-_Sledgehammer.mp3-out013_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/056._D.I.P_Project_Feat._Selecta_-_Я_Люблю.mp3-out021_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/017._Eros_Ramazzotti_-_Perfetto.mp3-out010_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/025._Виталий_Чирва_-_Как_Же_Я_Люблю_Тебя.mp3-out016_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/069._РЭЙ_feat._Tonystar_-_La_La_La__U_Wanna_.mp3-out002_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/099._Полина_Смолова_-_Где-то_Там.mp3-out000_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/059._Sasha_Holiday_-_Chameleon.mp3-out021_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/074._David_Guetta_Feat._John_Legend_-_Listen.mp3-out001_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/099._Полина_Смолова_-_Где-то_Там.mp3-out009_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/033._Elton_John_-_Blue_Wonderful.mp3-out005_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/018._T.I._Feat._Pharrell_-_Oh_Yeah.mp3-out015_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/002._Zedd,_Bahari_-_Addicted_To_A_Memory.mp3-out001_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/096._Rihanna_-_Kiss_It_Better.mp3-out014_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/096._Rihanna_-_Kiss_It_Better.mp3-out016_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/038._Лавика_-_Body_Cries.mp3-out014_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
+# no good
+dataset/3_genres/train/pop/063._Iowa_-_Бьет_Бит.mp3-out020_vamp_qm-vamp-plugins_qm-adaptivespectrogram_output.csv
