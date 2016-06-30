@@ -3,6 +3,7 @@ raw/*
 ngetest/*
 pickled_vectors/*
 model_weights/*
+query/*
 *~
 _pycache__/*
 *.py[cod]
