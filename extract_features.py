@@ -17,6 +17,10 @@ def extract_features_single(path=".",audio_features=["vamp:qm-vamp-plugins:qm-mf
         cmd = "sonic-annotator -d {0} {1} -w csv".format(feature,path)
         subprocess.call(cmd.split())
 
+def extract_features_single_custom_transform(path=".",ttl="test.ttl"):
+    cmd = "sonic-annotator -t {0} {1} -w csv".format(ttl,path)
+    subprocess.call(cmd.split())
+
 if __name__=="__main__":
     # extract_features("dataset/gztan_split_10sec")
 

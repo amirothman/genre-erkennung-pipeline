@@ -1,0 +1,6 @@
+
+<transform
+    id="vamp:qm-vamp-plugins:qm-adaptivespectrogram:output"
+    stepSize="4096"
+    blockSize="1024">
+</transform>
