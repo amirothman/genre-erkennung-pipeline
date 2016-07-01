@@ -21,12 +21,12 @@ def saveToFile(genreResult):
         f.write(genreResult)
         f.close()
 
-if not os.path.exists("model_weights/merged_model_weights.hdf5"):
+if not os.path.exists("model_weights/super_awesome_merged_model_weights.hdf5"):
     print("No model weights found in path 'model_weights/merged_model_weights.hdf5'")
 else:
     json_string = json.load(open("model_architecture/merged_model_architecture.json","r"))
     model = model_from_json(json_string)
-    model.load_weights("model_weights/merged_model_weights.hdf5")
+    model.load_weights("model_weights/super_awesome_merged_model_weights.hdf5")
     model.compile(loss='categorical_crossentropy',
                   optimizer='adam',
                   metrics=['accuracy']
@@ -92,7 +92,28 @@ else:
 
         x3 = sequence.pad_sequences(x3, maxlen=spectral_max_len,dtype='float32')
 
-        predictions = model.predict_classes([x2,x3])
+        keyword_4 = "spectral-contrast_valleys"
+        x4 = []
+        for root, dirs, files in os.walk(song_folder, topdown=False):
+            for name in files:
+                if re.search(keyword_4+".csv",name):
+                    song_path = (os.path.join(root,name))
+                    song_features = genfromtxt(song_path, delimiter=",")
+
+                    if len(song_features.shape) is 2:
+                        song_features = np.array([ _line[1:] for _line in song_features])
+                    elif len(song_features.shape) is 1:
+                        song_features = np.array([song_features[1:]])
+
+                    x4.append(song_features)
+
+        spectral_max_len = 0
+        with( open("maxlen_spectral-contrast_peaks","r") ) as _f:
+            spectral_max_len = int(_f.read())
+
+        x4 = sequence.pad_sequences(x4, maxlen=spectral_max_len,dtype='float32')
+
+        predictions = model.predict_classes([x2,x3,x4])
         genredict = ["hiphop","pop", "rock"]
         genredict.sort()#make sure that it is alphabetically sorted
         
@@ -104,13 +125,14 @@ else:
         mode = max(set(resultsstringified), key=resultsstringified.count);
         
         resultstring = ""
+        modeCounter=0
         for p in resultsstringified:
             if mode==p:
                 modeCounter+=1
             resultstring += p+" "
             
         print("Detected "+resultstring)  
-        print("The song is "+str(modeCounter*100/resultsstringified.count)+" % "+mode)
+        print("The song is "+str(modeCounter*100/len(resultsstringified))+" % "+mode)
         
         saveToFile(resultstring)
 

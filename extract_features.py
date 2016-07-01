@@ -9,6 +9,7 @@ audio_features = [
                     #   "vamp:qm-vamp-plugins:qm-tempotracker:tempo",
                       "vamp:qm-vamp-plugins:qm-mfcc:coefficients",
                       "vamp:bbc-vamp-plugins:bbc-spectral-contrast:peaks",
+                      "vamp:bbc-vamp-plugins:bbc-spectral-contrast:valleys",
                       ]
                       
 def extract_features(path="."):
