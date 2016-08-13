@@ -79,7 +79,7 @@ Now, you can put your data in the respective directories with each file in it's 
 
 ```
 
-I've written a bash script `sample_song.sh` to automaticcaly split a dataset into test set and training set. If you are a shell ninja, you can edit the script to split the dataset.
+The bash script `splitTrainTest.sh` to automaticcaly split a dataset into test set and training set. The shall can be used for splitting but must be customized for the training set.
 
 You can have as many genres as you want. Just make sure:
 
@@ -87,16 +87,11 @@ You can have as many genres as you want. Just make sure:
   * The split between test set and training set is sensible
 
 The format of the audio can be any audio format that is supported by sonic-annotator and ffmpeg.
-One preprocessing step before we continue to feature extraction:
+One preprocessing step before we continue to feature extraction is splitting the audio files into 30 second chunks - to make it more manageable
 
-  * is splitting the audio files into 30 second chunks - to make it more manageable
+To do this, we can use the ``split_30_seconds.py`` script. The method used here is ``batch_thirty_seconds(folder_path)``. In our case, `folder_path` would be ``my_data_set``. You should edit this in the main part of the code.
 
-To do this, we can use the ``split_30_seconds.py`` script. The method used here is ``batch_thirty_seconds(folder_path,file_format)``. In our case, `folder_path` would be ``my_data_set`` and `file_format` would be ``mp3``. You should edit this in the main part of the code.
-```python
-batch_thirty_seconds(folder_path,file_format)
-```
-* folder_path: string of directory path (where the folder train and test is)
-* file_format: string of audio format (e.g. 'mp3', 'au', etc.)
+* folder_path: string of data set path (where the folder train and test is)
 
 Run `split_30_seconds.py` with:
 
@@ -104,7 +99,7 @@ Run `split_30_seconds.py` with:
 python3 split_30_seconds.py <path to dataset>
 ```
 
-If your audio files contain spaces or some other weird characters, this script will throw an error. You can use the script space_to_underscore.sh to rename them.
+If your audio files contain spaces or some other weird characters, this script will throw an error. You can use the script `space_to_underscore.sh` to rename them.
 
 # Feature Extraction
 
@@ -291,8 +286,8 @@ getGenreFromYoutube.sh https://www.youtube.com/watch?v=VDvr08sCPOc
 
 An example of the output would be something like:
 
-    [1 1 0 0 1 0 0 1]
-
-What does this mean? The song is split into 30 seconds chunks. The model predicts genre_1 for the first two 30 second chunks and genre_2 for the focollowing. Of course we can do a lot more cleverer and more sophisticated ways to determine what the model determine. But if we take the mode of the output as the model's decision, we can say that the song that we had, was of genre_2.
-
-Hope you had fun following this tutorial. It is useful to read the documentation of Keras if you want tweak the model.
+```
+Detected rock hiphop hiphop hiphop rock hiphop rock hiphop hiphop rock 
+The song is 60.0 % hiphop
+```
+What does this mean? The song is split into 30 seconds chunks. The model predicts a genre for each chunk which are then averaged.
