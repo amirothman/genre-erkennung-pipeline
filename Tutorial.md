@@ -10,26 +10,35 @@ Since this is a machine learning task, we shall follow the typical procedure of:
 
 # Preliminaries
 
-Firstly, I am not a super l33t 10x software engineer and I cobbled up most of this code in a day.
-So, a lot of restructuring and refactoring should and could be done. This guide will show how to use the code as is. Clone the git repo, and switch the branch to working-model-0.1
+This guide will show how to use the code. First clone the git repo, and switch the branch to working-model-0.1
 ```shell
 git clone https://github.com/amirothman/genre-erkennung-pipeline
 cd genre-erkennung-pipeline
 git checkout working-model-0.1
 ```
 
-Now you should have all the code. But not all the data. But first, let's go through the requirement:
+Now you should have all the code. But not yet all the data and the dependencies. But first, let's go through the requirement:
 
-  * keras (deep learning framework)
+  * keras (deep learning python framework)
   * sklearn (machine learning library)
   * matplotlib (plotting)
-  * hdf5: brew install homebrew/science/hdf5
-  * h5py: sudo pip install h5py
-  * youtube-dl (to test data)
+  * hdf5 (file format)
+ 
+On Mac OS X hdf5 can be installed via `brew`
+```shell
+brew install homebrew/science/hdf5
+```
+  
+To install the python libraries:
+  * `sudo python3 -m pip install keras`
+  * `sudo python3 -m pip install h5py`
+  * `sudo python3 -m pip install sklearn`
+  * `sudo python3 -m pip install matplotlib`
 
 Outside of the python libraries we also require some command line tools:
 
-  * sonic-annotator (Vamp feature extraction utility)
+  * [sonic-annotator](http://vamp-plugins.org/sonic-annotator/) (Vamp plug-in host, extraction utility)
+  * youtube-dl (to query data)
 
 And we also need to install some Vamp plugins:
 
@@ -110,10 +119,8 @@ The python script ``extract_features.py`` will be used here.
 ```shell
 python extract_features.py <path to dataset or single file>
 ```
-After running that script, you will realize a bunch of csv files in your dataset. It may take a while for this process to finish. Have a cup of coffee or a line of cocaine. Depends on which level of rockstar you are.
-
-
-After that step you will have a bunch of csv files. Now convert them into numpy arrays and pickle them, so you can reuse and abuse them. For this we will turn to ``parse_features.py``. The used method is ``build_vectors``
+After running that script, you will realize a bunch of csv files in your dataset. It may take a while for this process to finish.
+Now convert them into numpy arrays and pickle them, so you can reuse them. For this we will turn to ``parse_features.py``. The used method is ``build_vectors``
 
 ```python
 build_vectors(folder_path,keyword,lower_limit)
@@ -139,7 +146,7 @@ If it is empty, you probably messed up something. Call the ambulance.
 
 # Training Model
 
-Awesome. You've reached here. This is the machine learning step. The most interesting step. There are two separate models for the two different features. The models are in two different scripts, mfcc_model.py and spectral-contrast_peaks_model.py. The merged model is in the script prototype_merged.py. You can train each model separately or combining them. Let's try just one model first, then the other one then the merged one.
+This is the machine learning step. The most interesting step. There are two separate models for the two different features. The models are in two different scripts, mfcc_model.py and spectral-contrast_peaks_model.py. The merged model is in the script prototype_merged.py. You can train each model separately or combining them. Let's try just one model first, then the other one then the merged one.
 
 ## MFCC Model
 
@@ -286,6 +293,6 @@ An example of the output would be something like:
 
     [1 1 0 0 1 0 0 1]
 
-What does this mean? The song is split into 30 seconds chunks. The model predicts genre_1 for the first two 30 second chunks and genre_2 for the following. Of course we can do a lot more cleverer and more sophisticated ways to determine what the model determine. But if we take the mode of the output as the model's decision, we can say that the song that we had, was of genre_2.
+What does this mean? The song is split into 30 seconds chunks. The model predicts genre_1 for the first two 30 second chunks and genre_2 for the focollowing. Of course we can do a lot more cleverer and more sophisticated ways to determine what the model determine. But if we take the mode of the output as the model's decision, we can say that the song that we had, was of genre_2.
 
 Hope you had fun following this tutorial. It is useful to read the documentation of Keras if you want tweak the model.
