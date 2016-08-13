@@ -166,14 +166,11 @@ python3 mfcc_model.py
 
 Or if you have configured CUDA on your machine, you can also use keras_gpu.sh. This is probably the wrongest hackiest way to run Theano code with Cuda but, it works for now.
 
-    sh keras_gpu.sh mfcc_model.py
-
-One thing that you may have to further edit is the number of outputs of your neural network. On this line:
-```python
-model.add(Dense(2))
+```shell
+sh keras_gpu.sh mfcc_model.py
 ```
 
-2 refers to 2 genres. If your dataset have 10 genres, change it 10.
+You may change the amount of used genres in `mfcc_model.py` by changing `numGenres = 3`.
 
 ## Spectral Contrast Model
 
@@ -197,13 +194,7 @@ Or if you have configured CUDA on your machine, you can also use keras_gpu.sh. T
 
     sh keras_gpu.sh spectral_contrast_peaks_model.py
 
-One thing that you may have to further edit is the number of outputs of your neural network. On this line:
-
-```python
-model.add(Dense(2))
-```
-
-2 refers to 2 genres. If your dataset have 10 genres, change it 10.
+You may change the amount of used genres in `mfcc_model.py` by changing `numGenres = 3`.
 
 ## Merged Model
 
@@ -224,17 +215,7 @@ One thing that you may have to further edit is the number of outputs of your neu
 ```python
 model.add(Dense(2))
 ```
-2 refers to 2 genres. If your dataset have 10 genres, change it 10.
-
-Before running this model, you may want to save the weights some where. Let's create that directory.
-
-    mkdir model_weights
-
-Uncomment the following line:
-
-```python
-final_model.save_weights("model_weights/merged_model_weights.hdf5",overwrite=True)
-````
+2 refers to two genres. Change it to the amount of genres.
 
 Now you can run this model with:
 
@@ -245,10 +226,6 @@ python3 prototype_merged.py
 Or if you have configured CUDA on your machine, you can also use keras_gpu.sh. This is probably the wrongest hackiest way to run Theano code with Cuda but, it works for now.
 
     sh keras_gpu.sh prototype_merged.py
-
-If everything goes well, I would like to congratulate you again. You have successfully trained a deep learning model. It's an ok-ish model, but at this point you can already use fancy buzz words like deep learning, artificial intelligence or the same technology behind google's deepmind.
-
-Awesome.
 
 # Querying The Model
 
