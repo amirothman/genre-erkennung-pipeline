@@ -9,6 +9,7 @@ Since this is a machine learning task, we shall follow the typical procedure of:
   * Querying model
 
 # Preliminaries
+You need a unix system for anything to work.
 
 This guide will show how to use the code. First clone the git repo, and switch the branch to working-model-0.1
 ```shell
@@ -40,6 +41,11 @@ Outside of the python libraries we also require some command line tools:
   * [sonic-annotator](http://vamp-plugins.org/sonic-annotator/) (Vamp plug-in host, extraction utility)
   * youtube-dl (to query data)
 
+Youtube-dl can be installed via
+```shell
+sudo curl https://yt-dl.org/latest/youtube-dl -o /usr/local/bin/youtube-dl
+sudo chmod a+rx /usr/local/bin/youtube-dl
+```
 And we also need to install some Vamp plugins:
 
   * [QM-Vamp Plugins](https://code.soundsoftware.ac.uk/projects/qm-vamp-plugins/files)
@@ -103,11 +109,7 @@ If your audio files contain spaces or some other weird characters, this script w
 
 # Feature Extraction
 
-Congratulations that you got this far. Now we will do feature extraction with `sonic-annotator`. What we will do is to first convert the audio files into CSV files with features, then convert the CSV files into Numpy arrays and serialize them with pickle. We can actually create the numpy arrays directly, skipping the csv files but:
-
-  * I was not aware of it during that time (Haha)
-  * It's actually much slower. Probably because the vamp host is a python implementation.
-audio file > csv > numpy > pickle
+Now we will do feature extraction with `sonic-annotator`. First we convert the audio files into CSV files with features, then convert the CSV files into Numpy arrays and serialize them with pickle.
 
 The python script ``extract_features.py`` will be used here.
 
