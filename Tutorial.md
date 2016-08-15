@@ -211,21 +211,17 @@ X_test_1 = pickle.load(open("pickled_vectors/mfcc_coefficients_evaluation_traini
 X_2 = pickle.load(open("pickled_vectors/spectral-contrast_peaks_training_vector.pickle","rb"))
 X_test_2 = pickle.load(open("pickled_vectors/spectral-contrast_peaks_evaluation_training_vector.pickle","rb"))
 ```
-One thing that you may have to further edit is the number of outputs of your neural network. On this line:
-```python
-model.add(Dense(2))
-```
-2 refers to two genres. Change it to the amount of genres.
+Again, you may have to further edit the number of outputs of your neural network.
 
 Now you can run this model with:
 
 ```shell
-python3 prototype_merged.py
+python3 merged.py
 ```
 
 Or if you have configured CUDA on your machine, you can also use keras_gpu.sh. This is probably the wrongest hackiest way to run Theano code with Cuda but, it works for now.
 
-    sh keras_gpu.sh prototype_merged.py
+    sh keras_gpu.sh merged.py
 
 # Querying The Model
 
