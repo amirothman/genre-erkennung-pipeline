@@ -17,6 +17,7 @@ import os
 batch_size = 50
 nb_epoch = 50
 
+numGenres = 3
 
 print("creating model")
 # create model
@@ -54,7 +55,7 @@ merged = Merge([model_1,model_2],mode="concat")
 final_model = Sequential()
 final_model.add(merged)
 final_model.add(Dense(1000))
-final_model.add(Dense(2, activation='softmax'))
+final_model.add(Dense(numGenres, activation='softmax'))
 final_model.compile(loss='categorical_crossentropy',
               optimizer='adam',
               metrics=['accuracy']
