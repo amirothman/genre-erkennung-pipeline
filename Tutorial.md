@@ -150,6 +150,7 @@ This is the machine learning step. The most interesting step. There are two sepa
 ![mfcc model](mfcc_model.png)
 
 Change the X, y, X_test, and y_test variable to load the pickled vectors of your desire. If you are following this tutorial, it would be:
+
 ```python
 X = pickle.load(open("pickled_vectors/mfcc_coefficients_training_vector.pickle","rb"))
 y = pickle.load(open("pickled_vectors/mfcc_coefficients_label.pickle","rb"))
