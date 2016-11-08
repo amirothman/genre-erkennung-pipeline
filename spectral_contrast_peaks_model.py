@@ -8,6 +8,8 @@ import matplotlib.pyplot as plt
 import pickle
 import json
 
+numGenres=3
+    
 # load vectorized song features
 #
 def model(input_shape):
@@ -16,6 +18,7 @@ def model(input_shape):
     filter_length = 3
     hidden_dims = 250
     pool_length = 1
+
 
     # LSTM
     lstm_output_size = 100
@@ -83,7 +86,7 @@ def model(input_shape):
     #
     # model.add(Dropout(0.2))
     # model.add(Flatten())
-    model.add(Dense(10))
+    model.add(Dense(numGenres))
     model.add(Dropout(0.2))
     # model.add(Flatten())
     # model.add(LSTM(lstm_output_size))
@@ -127,9 +130,9 @@ if __name__=="__main__":
     y_test = pickle.load(open("pickled_vectors/spectral-contrast_peaks_evaluation_label.pickle","rb"))
 
     batch_size = 20
-    nb_epoch = 20
+    nb_epoch = 50
     model = model((X.shape[1],X.shape[2]))
-    model.add(Dense(3))
+    model.add(Dense(numGenres))
     model.add(Activation('softmax'))
 
     model.compile(loss='categorical_crossentropy',
@@ -160,6 +163,9 @@ if __name__=="__main__":
     # # with open("experimental_results.json","w") as f:
     # #     f.write(json.dumps(history.history, sort_keys=True,indent=4, separators=(',', ': ')))
     #
+    if not os.path.exists("model_weights"):
+        os.makedirs("model_weights")
+    model.save_weights("model_weights/spectral_contrast_peaks_model_weights.hdf5",overwrite=True)    
     for k,v in history.history.items():
         # print(k,v)
         _keys = list(history.history.keys())

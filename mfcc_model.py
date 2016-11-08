@@ -1,3 +1,5 @@
+#!/usr/local/bin/python3
+
 import numpy as np
 np.random.seed(1337)  # for reproducibility
 from keras.models import Sequential
@@ -8,6 +10,7 @@ import matplotlib.pyplot as plt
 import pickle
 import json
 
+numGenres=3
 def mfcc_model(input_shape):
 
     nb_filter = 100
@@ -66,7 +69,7 @@ def mfcc_model(input_shape):
     # model.add(Flatten())
     # model.add(LSTM(lstm_output_size))
     model.add(Dropout(0.4))
-    model.add(Dense(10))
+    model.add(Dense(numGenres))
     model.add(Dropout(0.2))
     #
     # model.add(Convolution1D(
@@ -99,15 +102,15 @@ if __name__=="__main__":
     # load vectorized song features
     #
     batch_size = 20
-    nb_epoch = 20
-    X = pickle.load(open("3_genres_mfcc_coefficients_training_vector.pickle","rb"))
-    y = pickle.load(open("3_genres_mfcc_coefficients_labels.pickle","rb"))
+    nb_epoch = 50
+    X = pickle.load(open("pickled_vectors/mfcc_coefficients_training_vector.pickle","rb"))
+    y = pickle.load(open("pickled_vectors/mfcc_coefficients_label.pickle","rb"))
 
-    X_test = pickle.load(open("3_genres_mfcc_coefficients_evaluation_training_vector.pickle","rb"))
-    y_test = pickle.load(open("3_genres_mfcc_coefficients_evaluation_labels.pickle","rb"))
+    X_test = pickle.load(open("pickled_vectors/mfcc_coefficients_evaluation_training_vector.pickle","rb"))
+    y_test = pickle.load(open("pickled_vectors/mfcc_coefficients_evaluation_label.pickle","rb"))
 
     model = mfcc_model((X.shape[1],X.shape[2]))
-    model.add(Dense(3))
+    model.add(Dense(numGenres))
     model.add(Activation('softmax'))
     model.compile(loss='categorical_crossentropy',
                   optimizer='adam',
@@ -140,6 +143,9 @@ if __name__=="__main__":
         plt.title(k)
 
         plt.plot(range(0,len(v)),v,marker="8",linewidth=1.5)
-
+    if not os.path.exists("model_weights"):
+        os.makedirs("model_weights")
+    model.save_weights("model_weights/mfcc_model_weights.hdf5",overwrite=True)                                              
+    
     plt.tight_layout(pad=0.4, w_pad=0.5, h_pad=1.0)
     plt.show()

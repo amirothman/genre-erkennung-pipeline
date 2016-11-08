@@ -4,3 +4,9 @@ raw/*
 ngetest/*
 pickled_vectors/*
 model_weights/*
+*~
+_pycache__/*
+*.py[cod]
+*.mp3
+
+*.pyc

@@ -1,7 +1,9 @@
+#!/usr/local/bin/python3
 import os
 import re
 import numpy as np
 import pickle
+import sys
 from numpy import genfromtxt
 from keras.preprocessing import sequence
 from keras.utils import np_utils
@@ -26,18 +28,16 @@ def encode_label(genres,song_path,verbose=True):
 def vectorize_song_feature(filepath):
     song_features = genfromtxt(filepath, delimiter=",")
 
-def create_data_set(data_set_path,keyword=None,lower_limit=None,upper_limit=None,verbose=True,categorical=True):
-
+def create_dataset(dataset_path, keyword=None, lower_limit=None, upper_limit=None, verbose=True, categorical=True):
     training_vector = []
     labels = []
 
-    for root, dirs, files in os.walk(data_set_path, topdown=False):
+    for root, dirs, files in os.walk(dataset_path, topdown=False):
         genres = [_dir for _dir in dirs]
-        print("heeeee")
         # print(genres)
     print("genres",genres)
-    # print(data_set_path)
-    for root, dirs, files in os.walk(data_set_path, topdown=False):
+    # print(dataset_path)
+    for root, dirs, files in os.walk(dataset_path, topdown=False):
         for name in files:
             if re.search("{0}.csv".format(keyword),name):
                 song_path = (os.path.join(root,name))
@@ -63,10 +63,10 @@ def create_data_set(data_set_path,keyword=None,lower_limit=None,upper_limit=None
 
 def build_vectors(keyword="",data_label="",lower_limit=None,upper_limit=None,folder_path="dataset"):
     # training
-    training_vector,labels,maxlen_training = create_data_set(data_set_path = "{0}/train".format(folder_path),keyword=keyword,lower_limit=lower_limit,upper_limit=upper_limit)
+    training_vector,labels,maxlen_training = create_dataset(dataset_path = folder_path+"/train",keyword=keyword,lower_limit=lower_limit,upper_limit=upper_limit)
 
     # validation
-    evaluation_training_vector,evaluation_labels,maxlen_evaluation = create_data_set(data_set_path = "{0}/test".format(folder_path),keyword=keyword,lower_limit=lower_limit,upper_limit=upper_limit)
+    evaluation_training_vector,evaluation_labels,maxlen_evaluation = create_dataset(dataset_path = "{0}/test".format(folder_path),keyword=keyword,lower_limit=lower_limit,upper_limit=upper_limit)
 
     # # X_training
     training_vector = sequence.pad_sequences(training_vector, maxlen=np.max([maxlen_training,maxlen_evaluation]),dtype='float32')
@@ -87,10 +87,16 @@ def build_vectors(keyword="",data_label="",lower_limit=None,upper_limit=None,fol
         _f.write(str(np.max([maxlen_training,maxlen_evaluation])))
 
 if __name__=="__main__":
-    build_vectors(folder_path="dataset/my_data_set",keyword="spectral-contrast_peaks",lower_limit=1)
-    build_vectors(folder_path="dataset/my_data_set",keyword="mfcc_coefficients",lower_limit=1)
-    # build_vectors(keyword="tempotracker_tempo",upper_limit=-1)
-    #create_data_set("dataset/my_data_set",keyword="spectral-contrast_peaks",lower_limit=1)
-    #create_data_set("dataset/my_data_set",keyword="mfcc_coefficients",lower_limit=1)
+    if len(sys.argv) < 2:
+        print("missing parameter for dataset path")
+    else:
+        path=sys.argv[1]
+        if not os.path.exists("pickled_vectors"):
+            os.makedirs("pickled_vectors")
+        build_vectors(folder_path=path,keyword="spectral-contrast_peaks",lower_limit=1)
+        build_vectors(folder_path=path,keyword="mfcc_coefficients",lower_limit=1)
+        # build_vectors(keyword="tempotracker_tempo",upper_limit=-1)
+        #create_dataset("dataset/my_dataset",keyword="spectral-contrast_peaks",lower_limit=1)
+        #create_dataset("dataset/my_dataset",keyword="mfcc_coefficients",lower_limit=1)
     
     
